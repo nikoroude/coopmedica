@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cooperativa Medica Uruguay Ltda." />
+    <meta name="author" content="Carlos Nicolas Roude" />
+    <meta name="keywords" content="Cooperativa, Medica, Uruguay, coop, coopmed" />
+    <link rel="shortcut icon" href="../assets/img/favicon.ico">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abel&family=Assistant:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <title>Contacto - Cooperativa Medica Ltda.</title>
+
+</head>
+
+<body class="grid fontText">
+
+    <header class="cabecera">
+        <div class="cabecera__logo">
+            <a href="../index.html"><img id="logo" src="../assets/img/logo-noBG.png" alt="Cooperativa Medica Ltda."></a>
+            <h1 class="cabecera__textLogo fontLogo">Cooperativa Medica</h1>
+        </div>
+    </header>
+
+    <nav class="menu font__menu">
+        <ul class="menu__list font__menu">
+            <li><a href="../index.html" class="link">INICIO</a></li>
+            <li><a href="profesionales.html" class="link">PROFESIONALES</a></li>
+            <li><a href="institucional.html" class="link">INSTITUCIONAL</a></li>
+            <li><a href="contacto.html" class="link">CONTACTO</a></li>
+            <li><a href="acceder.html" class="link">ACCEDER</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="fontTittle contactTittle">CONTACTO</h1>
+    <div class="container__contact">
+            <div class="contact__info">
+                <p>Puedes contactarnos por medio de los siguientes canales:</p>
+                <ul class="contact__infoList">
+                    <li class="fontSubTittle">Administración</li>
+                    <ul>
+                        <li>03442 - 424555 int 24</li>
+                        <li>03442 - 427001</li>
+                        <li>03442 - 428565</li>
+                        <li>coopprestador@gmail.com</li>
+                        <li>coopmed12@gmail.com</li>
+                    </ul>
+                    <li class="fontSubTittle">ART</li>
+                    <ul>
+                        <li>03442 - 424555 int 24</li>
+                        <li>03442 - 427001</li>
+                        <li>03442 - 428565</li>
+                        <li>art.coopmedica@gmail.com</li>
+                    </ul>
+                    <li class="fontSubTittle">Tesoreria y Pagos a proveedores</li>
+                    <ul>
+                        <li>03442 - 424555 int 20</li>
+                        <li>coopmedt@gmail.com</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="contact__form">
+                <p class="contact__formText">
+                    Si tienes alguna duda en particular, te invitamos a llenar el formulario de contacto a
+                continuacion. Todos los campos son obligatorios</p>
+                <div class="contact__formArea">
+                    <h3 class="contact__tittle">Formulario de contacto</h3>
+                <form action="log.php" method="post" name="formcontac">
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Su Nombre">
+                    </div>
+                    <div>
+                        <label for="apellido">Contraseña</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Su Apellido">
+                    </div>
+                    <div>
+                        <label for="obrasocial">¿Posee obra social?</label>
+                        <input type="text" name="obrasocial" id="obrasocial" placeholder="Su obra social">
+                    </div>
+                    <div>
+                        <label for="email">E-mail de contacto</label>
+                        <input type="email" name="email" id="email" placeholder="ejemplo@email.com">
+                    </div>
+                    <div>
+                        <label for="opciones">Motivo de consulta</label>
+                        <select name="opciones" id="opciones">
+                            <option value selected disable></option>
+                            <option value="turnos">Turnos</option>
+                            <option value="obrasociales">Obras sociales y prepagas</option>
+                            <option value="profesionales">Profesionales</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="mensaje">Su consulta:</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10"
+                            placeholder="Ingrese su consulta"></textarea>
+                    </div>
+                    <div class="btn">
+                        <input class="btn__submit" type="submit" id="enviar" value="ENVIAR CONSULTA">
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+
+    <footer class="footer">
+        <div class="containerFooter">
+            <p>Legales</p>
+            <p>Términos y condiciones de uso</p>
+            <p>Política de privacidad</p>
+            <p><a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario">Defensa del
+                    Consumidor<strong class="underline">(Para reclamos ingrese aquí)</strong></a></p>
+        </div>
+        <div class="footer__copy">
+            <p>Copyright 2022 | Cooperativa Medica Ltda. | Todos los derechos reservados | Sitio web por Carlos Nicolas
+                Roude.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
