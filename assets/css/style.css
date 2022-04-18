@@ -36,7 +36,7 @@
 }
 
 .fontText {
-    font-size: 19px;
+    font-size: 1.6rem;
     text-align: justify;
     line-height: 1.6;
 }
@@ -601,12 +601,14 @@
         display: grid;
         gap: 2rem;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
+
     .medicList__img {
         width: 100%;
         transition: all 500ms ease-out;
     }
+
     .medic {
         width: 100%;
         display: flex;
@@ -627,7 +629,7 @@
         top: 0;
         width: 100%;
         height: 100%;
-        background: rgba(95, 95, 95, 0.6);
+        background: rgba(95, 95, 95, 0.7);
         opacity: 0;
         transition: all 500ms ease-out;
         opacity: 0;
@@ -765,7 +767,7 @@
     justify-content: flex-start;
     align-items: center;
     background-color: white;
-    width: 600px;
+    width: 500px;
     height: 600px;
     border-radius: 8px;
     padding: 20px 40px;
@@ -811,10 +813,16 @@ textarea {
     align-items: center;
     height: 100%;
     width: auto;
-    right: -17em;
-    bottom: -8em;
+    margin: auto;
+    bottom: -7em;
     background-color: var(--verde);
     color: #DADCE0;
+}
+
+.fontContact {
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.6;
 }
 
 @media screen and (min-width: 1440px) {
@@ -823,11 +831,15 @@ textarea {
         grid-column: 1/3;
         grid-row: 3/5;
         display: grid;
+        gap: 4rem;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: auto auto;
         grid-template-areas: "info" "form";
         align-items: baseline;
         justify-items: baseline;
+    }
+    .btn__submit:hover {
+        cursor: pointer;
     }
     .contact__infoList{
         grid-area: "info";
@@ -840,7 +852,8 @@ textarea {
         grid-row: 1/2;
     }
     .contactTittle {
-        text-align: center;
+        margin-right: auto;
+        display: inline;
     }
 }
 
@@ -885,4 +898,13 @@ textarea {
     right: -1em;
     background-color: var(--verde);
     color: #DADCE0;
+}
+
+.btn__login:hover {
+    cursor: pointer;
+}
+
+.fontLogin {
+    font-size: 1rem;
+    line-height: 1.6;
 }
