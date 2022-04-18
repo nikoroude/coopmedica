@@ -15,6 +15,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Abel&family=Assistant:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
     <title>Cooperativa Medica Ltda.</title>
 
@@ -47,8 +50,9 @@
 
     <section class="content">
         <div class="content__1">
-            <img class="content__imgR" src="assets/img/staffprofesionales.jpg" alt="Staff de PROFESIONALES">
-            <aside class="content__text">
+            <img data-aos="fade-right" class="content__imgL" src="assets/img/staffprofesionales.jpg"
+                alt="Staff de PROFESIONALES">
+            <aside data-aos="fade-left" class="content__text">
                 <h2 class="fontTittle">Staff de PROFESIONALES</h2>
                 <h3 class="fontSubTittle">Consultorios Externos</h3>
                 <p class="fontText">Integrado por Profesionales de nuestro Staff permanente que tienen agenda abierta
@@ -57,46 +61,42 @@
                     Medica como en Centro Médico ubicado en <strong>14 de julio 370</strong>. Lorem, ipsum dolor sit
                     amet consectetur adipisicing elit. Facilis dolore unde animi deserunt enim autem, nulla aliquam,
                     repudiandae exercitationem aut cumque a ipsa sequi soluta mollitia ullam quisquam placeat molestiae,
-                    eum itaque. Laborum, atque. Adipisci, cumque nesciunt officiis deserunt aut modi minus iste
-                    obcaecati animi facere laboriosam labore provident eum?</p>
+                    eum itaque. Laborum, atque.</p>
                 <h3 class="fontSubTittle">Médicos Invitados</h3>
-                <p class="fontText">Profesionales que no realizan consultorio en nuestras Instituciones, pero que pueden solicitar turno
+                <p class="fontText">Profesionales que no realizan consultorio en nuestras Instituciones, pero que pueden
+                    solicitar turno
                     para
-                    realizar prácticas quirúrgicas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
-                    aliquid temporibus inventore dicta, quidem, repellat nemo aspernatur, laboriosam voluptatibus
-                    reiciendis necessitatibus cumque porro dolore sed cum! Expedita impedit illum numquam.</p>
+                    realizar prácticas quirúrgicas. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </aside>
         </div>
 
         <div class="content__2">
-            <img class="content__imgL" src="assets/img/maternidad.jpg" alt="Area de Maternidad y Neonatologia">
-            <aside class="content__text">
+            <img class="content__imgR" src="assets/img/maternidad.jpg"
+                alt="Area de Maternidad y Neonatologia" data-aos="fade-left" data-aos-duration="1000">
+            <aside class="content__text" data-aos="fade-right" data-aos-duration="1000">
                 <h2 class="fontTittle">Area de MATERNIDAD y NEONATOLOGIA</p>
                     <h3 class="fontSubTittle">Maternidad</h3>
-                    <p class="fontText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nobis a velit earum, itaque iure
+                    <p class="fontText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nobis a velit
+                        earum, itaque iure
                         fugit
                         autem distinctio doloremque accusamus odit, aspernatur, architecto magni hic asperiores cum!
                         Accusamus nobis recusandae ad deleniti veritatis culpa vero perferendis ab perspiciatis natus
                         nihil
-                        et id, minima tenetur odit consectetur placeat nemo, repellat iste inventore? Iure consequatur
-                        veniam itaque voluptatem, aliquid voluptates vel deserunt accusantium incidunt obcaecati sed
-                        velit
-                        amet cum magnam qui a! Inventore rerum ratione sapiente eum provident atque ex consequatur
-                        soluta.
+                        et id, minima tenetur odit consectetur placeat nemo, repellat iste inventore?
                     </p>
                     <h3 class="fontSubTittle">Neonatologia</h3>
-                    <p class="fontText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi exercitationem quaerat quos at
+                    <p class="fontText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi exercitationem
+                        quaerat quos at
                         quis,
                         mollitia recusandae cum maiores soluta ipsam illo. Pariatur architecto earum ex officia.
                         Asperiores
                         quisquam blanditiis hic debitis incidunt molestias, autem excepturi enim delectus assumenda unde
-                        explicabo. Qui, praesentium. Nam, quas esse culpa id repellendus debitis dolores saepe facere,
-                        suscipit modi ipsam natus ex et iusto iste?</p>
+                        explicabo.</p>
             </aside>
         </div>
     </section>
 
-    <div class="service">
+    <div class="service" data-aos="flip-up" data-aos-duration="2000">
         <div class="service__1">
             <img src="assets/img/turnos.jpg" alt="Central de turnos">
         </div>
@@ -150,6 +150,10 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
