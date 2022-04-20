@@ -143,13 +143,14 @@
 
 #logo {
     width: 100px;
-    margin: .5rem;
+    margin: auto;
     text-align: center;
 }
 
 @media screen and (min-width: 1024px) {
     #logo {
         width: 150px;
+        margin: 0.5rem;
     }
 }
 

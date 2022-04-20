@@ -12,35 +12,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-    href="https://fonts.googleapis.com/css2?family=Abel&family=Assistant:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Abel&family=Assistant:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
-    
-    <title>Contacto - Cooperativa Medica Ltda.</title>
+
+    <title>Profesionales - Cooperativa Medica Ltda.</title>
 
 </head>
 
-<body class="grid fontText">
+<body class="container-fluid fontText">
 
-    <header class="cabecera">
-        <div class="cabecera__logo">
-            <a href="../index.html"><img id="logo" src="../assets/img/logo-noBG.png" alt="Cooperativa Medica Ltda."></a>
-            <h1 class="cabecera__textLogo fontLogo">Cooperativa Medica</h1>
+    <!-- NAVBAR -->
+
+    <header class="row d-flex flex-wrap align-items-center justify-content-center p-2">
+        <div class="col-md-4 col-sm-12">
+            <a href="index.html" class="d-flex align-items-center">
+                <img id="logo" src="../assets/img/logo-noBG.png" alt="Cooperativa Medica Ltda.">
+            </a>
         </div>
+        <nav class="col-md-8 col-sm-12 justify-conten-end mt-1">
+            <div class="row d-flex justify-content-end">
+                <ul class="nav justify-content-between menu__list font__menu menu">
+                    <li><a href="../index.html" class="link">INICIO</a></li>
+                    <li><a href="profesionales.html" class="link">PROFESIONALES</a></li>
+                    <li><a href="institucional.html" class="link">INSTITUCIONAL</a></li>
+                    <li><a href="contacto.html" class="link">CONTACTO</a></li>
+                    <li><a href="acceder.html" class="link">ACCEDER</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <nav class="menu font__menu">
-        <ul class="menu__list font__menu">
-            <li><a href="../index.html" class="link">INICIO</a></li>
-            <li><a href="profesionales.html" class="link">PROFESIONALES</a></li>
-            <li><a href="institucional.html" class="link">INSTITUCIONAL</a></li>
-            <li><a href="contacto.html" class="link">CONTACTO</a></li>
-            <li><a href="acceder.html" class="link">ACCEDER</a></li>
-        </ul>
-    </nav>
+<!-- CONTACT -->
 
     <div class="container__contact">
         <div class="contact__info">
@@ -117,7 +123,9 @@
             </div>
         </div>
 
-    <footer class="footer">
+    <!-- FOOTER -->
+
+    <footer class="row footer">
         <div class="containerFooter">
             <p>Legales</p>
             <p>Términos y condiciones de uso</p>
