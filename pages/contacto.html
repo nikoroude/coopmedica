@@ -46,83 +46,71 @@
         </nav>
     </header>
 
-<!-- CONTACT -->
+    <!-- CONTACT INFO-->
 
-    <div class="container__contact">
-        <div class="contact__info">
-                <h1 class="fontTittle contactTittle animate__animated animate__slideInLeft">CONTACTO</h1>
-                <p>Puedes contactarnos por medio de los siguientes canales:</p>
-                <ul class="contact__infoList animate__animated animate__slideInLeft">
-                    <li class="fontSubTittle">Administración</li>
-                    <ul>
-                        <li>03442 - 424555 int 24</li>
-                        <li>03442 - 427001</li>
-                        <li>03442 - 428565</li>
-                        <li>coopprestador@gmail.com</li>
-                        <li>coopmed12@gmail.com</li>
-                    </ul>
-                    <li class="fontSubTittle">ART</li>
-                    <ul>
-                        <li>03442 - 424555 int 24</li>
-                        <li>03442 - 427001</li>
-                        <li>03442 - 428565</li>
-                        <li>art.coopmedica@gmail.com</li>
-                    </ul>
-                    <li class="fontSubTittle">Tesoreria y Pagos a proveedores</li>
-                    <ul>
-                        <li>03442 - 424555 int 20</li>
-                        <li>coopmedt@gmail.com</li>
-                    </ul>
-                </ul>
+    <div class="container-fluid text-center">
+        <div class="row d-flex align-items-start justify-content-around">
+            <h1 class="fontLogo contactTittle animate__animated animate__slideInLeft mt-5 mb-5">CONTACTO</h1>
+            <div class="col-md-12 col-lg-4 mb-5 text-center valores gradient-border contact__info" data-aos="zoom-in">
+                <h2 class="fontSubTittle text-center">Administración</h2>
+                <p>(03442) - 424555 int 24</p>
+                <p>(03442) - 427001 / 428565</p>
+                <p>coopprestador@gmail.com</p>
+                <p>coopmed12@gmail.com</p>
             </div>
-            <div class="contact__form animate__animated animate__slideInRight">
-                <p class="contact__formText">
-                    Si tienes alguna duda en particular, te invitamos a llenar el formulario de contacto a
-                continuacion. Todos los campos son obligatorios.</p>
-                <div class="contact__formArea fontContact" data-aos="flip-left"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="2500" data-aos-delay="1000">
-                    <h3 class="contact__tittle">Formulario de contacto</h3>
-                <form action="log.php" method="post" name="formcontac">
-                    <div>
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" id="nombre" placeholder="Su Nombre">
-                    </div>
-                    <div>
-                        <label for="apellido">Contraseña</label>
-                        <input type="text" name="apellido" id="apellido" placeholder="Su Apellido">
-                    </div>
-                    <div>
-                        <label for="obrasocial">¿Posee obra social?</label>
-                        <input type="text" name="obrasocial" id="obrasocial" placeholder="Su obra social">
-                    </div>
-                    <div>
-                        <label for="email">E-mail de contacto</label>
-                        <input type="email" name="email" id="email" placeholder="ejemplo@email.com">
-                    </div>
-                    <div>
-                        <label for="opciones">Motivo de consulta</label>
-                        <select name="opciones" id="opciones">
-                            <option value selected disable></option>
-                            <option value="turnos">Turnos</option>
-                            <option value="obrasociales">Obras sociales y prepagas</option>
-                            <option value="profesionales">Profesionales</option>
-                            <option value="otro">Otro</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="mensaje">Su consulta:</label>
-                        <textarea name="mensaje" id="mensaje" cols="30" rows="10"
-                            placeholder="Ingrese su consulta"></textarea>
-                    </div>
-                    <div class="btn">
-                        <input class="btn__submit" type="submit" id="enviar" value="ENVIAR CONSULTA">
-                    </div>
-                </form>
-                </div>
+
+            <div class="col-md-12 col-lg-4 mb-5 text-center valores contact__info" data-aos="zoom-in">
+                <h2 class="fontSubTittle text-center">Tesoreria y Pago a proveedores</h2>
+                <p>03442 - 424555 int 20</p>
+                <p>coopmedt@gmail.com</p>
+            </div>
+
+            <div class="col-md-12 col-lg-4 mb-5 valores text-center contact__info" data-aos="zoom-in">
+                <h2 class="fontSubTittle text-center">Gardia y Consultorios</h2>
+                <p>(03442) - 424555 int 21</p>
+                <p>(03442) - 424555 int 22</p>
             </div>
         </div>
 
+        <!-- CONTACT FORM -->
+
+        <div class="container-fluid col-lg col-md d-flex justify-content-center contact__formArea mt-5 mb-5">
+            <div class="contact">
+                <p class="fontSubTittle text-center">Formulario de contacto</p>
+                <form class="p-5">
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" id="apellido" class="form-control" placeholder="Apellido">
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail de contacto</label>
+                        <input type="email" name="email" id="email" class="form-control"
+                            placeholder="nombre@ejemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="motivo">Motivo de Consulta</label>
+                        <select name="opciones" id="opciones" class="form-select form-select mb-3"
+                            aria-label=".form-select-lg">
+                            <option selected>Elige una opción</option>
+                            <option>Turnos</option>
+                            <option>Obras sociales y prepagas</option>
+                            <option>Profesionales</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Ingrese su consulta</label>
+                        <textarea class="form-control" name="mensaje" id="mensaje" rows="5"></textarea>
+                    </div>
+                    <button type="submit" id="submit" class="btn btn-primary mt-5">ENVIAR CONSULTA</button>
+                </form>
+            </div>
+        </div>
+    </div>
     <!-- FOOTER -->
 
     <footer class="row footer">
@@ -134,7 +122,8 @@
                     Consumidor<strong class="underline">(Para reclamos ingrese aquí)</strong></a></p>
         </div>
         <div class="footer__copy">
-            <p>Copyright 2022 | Cooperativa Medica Ltda. | Todos los derechos reservados | Sitio web por Carlos Nicolas
+            <p>Copyright 2022 | Cooperativa Medica Ltda. | Todos los derechos reservados | Sitio web por
+                Carlos Nicolas
                 Roude.</p>
         </div>
     </footer>
