@@ -567,28 +567,64 @@
 
 /* ======== INSTITUCIONAL ======== */
 
-/* .container__institucional {
-    grid-area: "contenido1";
-    grid-column: 1/3;
-    grid-row: 3/4;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.container__mvv .fontLogo {
+    font-size: 3rem;
 }
-.content__text {
-    width: 50%;
-    margin: 0 auto;
+
+.container__about,
+.container__maternidad {
+    background-image: url("../img/background.jpg");
+    background-position: center; background-repeat: no-repeat;background-size: cover;
+    position: relative;
+}
+
+
+.container__maternidad {
+    background-image: url("../img/maternidad.jpg");
+}
+
+/* .container__about {
+    background-image: url("../img/background.jpg");
 } */
 
-.container__institucional__imgR {
-    width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+.container__about .fontLogo,
+.container__maternidad .fontLogo {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 2px 6px 6px rgba(0,0,0,0.67);
 }
 
-.container__institucional__imgL {
-    width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+@media screen and (max-width:576px) {
+    .container__about .fontLogo,
+    .container__maternidad .fontLogo {
+        font-size:2rem;
+    }
+}
+
+@media screen and (max-width:880px) {
+    .container__about .fontLogo,
+    .container__maternidad .fontLogo {
+        font-size:3rem;
+    }
+}
+
+.blur {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+}
+
+.col-12 {
+    height: 600px;
+}
+
+.valores {
+    text-align: justify;
+}
+
+.mb-6 {
+    margin-bottom: 4rem !important
 }
 
 /* @media screen and (min-width: 1440px) {
