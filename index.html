@@ -12,8 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-    href="https://fonts.googleapis.com/css2?family=Abel&family=Assistant:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Abel&family=Assistant:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -23,36 +23,72 @@
 
 </head>
 
-<body class="grid fontText">
+<body class="container-fluid fontText">
 
-    <header class="cabecera">
-        <div class="cabecera__logo">
-            <a href="index.html"><img id="logo" src="assets/img/logo-noBG.png" alt="Cooperativa Medica Ltda."></a>
-            <h1 class="cabecera__textLogo fontLogo">Cooperativa Medica</h1>
+    <!-- NAVBAR -->
+
+    <header class="row d-flex flex-wrap align-items-center justify-content-center p-2">
+        <div class="col-md-4 col-sm-12">
+            <a href="index.html" class="d-flex align-items-center">
+                <img id="logo" src="assets/img/logo-noBG.png" alt="Cooperativa Medica Ltda.">
+            </a>
         </div>
+        <nav class="col-md-8 col-sm-12 justify-conten-end mt-1">
+            <div class="row d-flex justify-content-end">
+                <ul class="nav justify-content-between menu__list font__menu menu">
+                    <li><a href="index.html" class="link">INICIO</a></li>
+                    <li><a href="pages/profesionales.html" class="link">PROFESIONALES</a></li>
+                    <li><a href="pages/institucional.html" class="link">INSTITUCIONAL</a></li>
+                    <li><a href="pages/contacto.html" class="link">CONTACTO</a></li>
+                    <li><a href="pages/acceder.html" class="link">ACCEDER</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <nav class="menu font__menu">
-        <ul class="menu__list font__menu">
-            <li><a href="index.html" class="link">INICIO</a></li>
-            <li><a href="pages/profesionales.html" class="link">PROFESIONALES</a></li>
-            <li><a href="pages/institucional.html" class="link">INSTITUCIONAL</a></li>
-            <li><a href="pages/contacto.html" class="link">CONTACTO</a></li>
-            <li><a href="pages/acceder.html" class="link">ACCEDER</a></li>
-        </ul>
-    </nav>
+    <!-- CAROUSEL -->
 
-    <section class="novedades">
-        <div class="novedades__content">
-            <img src="assets/img/nos.jpg" alt="Obras sociales">
+    <div id="novedades" class="novedades__content carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
         </div>
-    </section>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/nos.jpg" alt="Obras sociales">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/slide2.jpg" alt="Obras sociales">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/slide3.jpg" alt="Obras sociales">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
 
-    <section class="content">
-        <div class="content__1">
-            <img data-aos="fade-right" class="content__imgL" src="assets/img/staffprofesionales.jpg"
-                alt="Staff de PROFESIONALES">
-            <aside data-aos="fade-left" class="content__text">
+    <!-- CONTENT -->
+
+    <section class="row mt-5">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 justify-content-between text-center">
+                <img data-aos="fade-right" class="content__imgL" src="assets/img/staffprofesionales.jpg"
+                    alt="Staff de PROFESIONALES">
+            </div>
+            <aside data-aos="fade-left" class="col-lg-6 col-md-12 content__text">
                 <h2 class="fontTittle">Staff de PROFESIONALES</h2>
                 <h3 class="fontSubTittle">Consultorios Externos</h3>
                 <p class="fontText">Integrado por Profesionales de nuestro Staff permanente que tienen agenda abierta
@@ -70,10 +106,12 @@
             </aside>
         </div>
 
-        <div class="content__2">
-            <img class="content__imgR" src="assets/img/maternidad.jpg"
-                alt="Area de Maternidad y Neonatologia" data-aos="fade-left" data-aos-duration="1000">
-            <aside class="content__text" data-aos="fade-right" data-aos-duration="1000">
+        <div class="row mt-5 d-flex flex-row-reverse">
+            <div class="col-lg-6 col-md-12 justify-content-between text-center">
+                <img data-aos="fade-right" class="content__imgR" src="assets/img/maternidad.jpg"
+                    alt="Area de Maternidad y Neonatologia">
+            </div>
+            <aside data-aos="fade-left" class="col-lg-6 col-md-12 content__text">
                 <h2 class="fontTittle">Area de MATERNIDAD y NEONATOLOGIA</p>
                     <h3 class="fontSubTittle">Maternidad</h3>
                     <p class="fontText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nobis a velit
@@ -96,7 +134,9 @@
         </div>
     </section>
 
-    <div class="service" data-aos="flip-up" data-aos-duration="2000">
+<!-- SERVICES -->
+
+    <div class="container service" data-aos="flip-up" data-aos-duration="2000">
         <div class="service__1">
             <img src="assets/img/turnos.jpg" alt="Central de turnos">
         </div>
@@ -117,8 +157,9 @@
         </div>
     </div>
 
+<!-- LOCATION -->
 
-    <section class="location">
+    <section class="location m-3">
         <div class="location__map">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13462.926056644646!2d-58.2366071!3d-32.4798723!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3f77b25d95e8d607!2sCooperativa%20M%C3%A9dica%20Ltda!5e0!3m2!1ses-419!2sar!4v1647736040012!5m2!1ses-419!2sar"
@@ -135,8 +176,9 @@
         </div>
     </section>
 
+<!-- FOOTER -->
 
-    <footer class="footer">
+    <footer class="row footer">
         <div class="containerFooter">
             <p>Legales</p>
             <p>Términos y condiciones de uso</p>
