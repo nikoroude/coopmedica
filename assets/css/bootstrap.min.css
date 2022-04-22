@@ -2271,7 +2271,7 @@ progress {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
+    color: #099d0a;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
@@ -2299,9 +2299,9 @@ progress {
 .form-control:focus {
     color: #212529;
     background-color: #fff;
-    border-color: #86b7fe;
+    border-color: #099d0a;
     outline: 0;
-    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25)
+    box-shadow: 0 0 0 .25rem #099d0a40
 }
 
 .form-control::-webkit-date-and-time-value {
@@ -2329,7 +2329,7 @@ progress {
     margin: -.375rem -.75rem;
     -webkit-margin-end: .75rem;
     margin-inline-end: .75rem;
-    color: #212529;
+    color: #099d0a;
     background-color: #e9ecef;
     pointer-events: none;
     border-color: inherit;
@@ -5059,7 +5059,7 @@ fieldset:disabled .btn {
 
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show>.nav-link {
-    color: rgba(0, 0, 0, .9)
+    color: #099d0a;
 }
 
 .navbar-light .navbar-toggler {

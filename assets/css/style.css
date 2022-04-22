@@ -43,7 +43,7 @@
 
 .font__menu {
     font-family: 'Rajdhani', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 500;
     letter-spacing: 0.2rem;
     word-spacing: 0.8rem;
@@ -60,16 +60,6 @@
 
 
 /* ======== HEADER ======== */
-
-#logo {
-    width: 100px;
-    margin: auto;
-    text-align: center;
-}
-
-.cabecera__textLogo {
-    text-transform: uppercase;
-}
 
 .nav-link {
     color: black;
@@ -227,7 +217,7 @@
     background-color: rgb(44, 44, 44);
     color: white;
     font-size: 1rem;
-    padding: 1rem 0 1rem ;
+    padding: 1rem 1rem 0.5rem ;
 }
 
 .footer__fixed {

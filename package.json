@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "download": "^8.0.0"
+  },
+  "name": "proyecto-fullresponsive",
+  "version": "1.0.0",
+  "description": "Coop-Medica",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikoroude/coopmedica.git"
+  },
+  "author": "ROUDE Nicolas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikoroude/coopmedica/issues"
+  },
+  "homepage": "https://github.com/nikoroude/coopmedica#readme"
+}
