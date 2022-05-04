@@ -1,0 +1,36 @@
+@mixin fontAtribute ($family, $size, $weight) { 
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+.fontLogo {
+    @include fontAtribute($fontLogo, 1.1rem, 800);
+    text-align: center;
+}
+
+.fontTittle {
+    @include fontAtribute($fontTittle, 2.1rem, 500);
+    text-align: left;
+    line-height: 2;
+}
+
+.fontSubTittle {
+    @include fontAtribute($fontSubTittle, 1.8rem, 300);
+    line-height: 2;
+    text-decoration: underline;
+    text-align: left;
+}
+
+.fontText {
+    @include fontAtribute($fontText, 1.6rem, 200);
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.font__menu {
+    @include fontAtribute($fontMenu, 0.8rem, 800);
+    letter-spacing: 0.2rem;
+    word-spacing: 0.8rem;
+    vertical-align: middle;
+}

@@ -1,0 +1,33 @@
+$about: (
+    us: url("../img/background.jpg"),
+    maternidad: url("../img/maternidad.jpg"),
+);
+
+.aboutProperties {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container__about {
+    background-image: map-get($map: $about, $key: us);
+    @extend .aboutProperties;
+
+    .fontLogo {
+        font-size: $size1*4;
+        color: $white;
+        text-shadow: 2px 6px 6px rgba(0, 0, 0, 0.67);
+    }
+}
+
+.container__maternidad {
+    background-image: map-get($map: $about, $key: maternidad);
+    @extend .aboutProperties;
+    
+    .fontLogo {
+        font-size: $size1*4;
+        color: $white;
+        text-shadow: 2px 6px 6px rgba(0, 0, 0, 0.67);
+    }
+}

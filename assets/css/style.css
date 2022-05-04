@@ -1,4 +1,65 @@
 @import url("https://fonts.googleapis.com/css2?family=Abel&family=Assistant:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap");
+.fontLogo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-align: center; }
+
+.fontTittle {
+  font-family: "Assistant", sans-serif;
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-align: left;
+  line-height: 2; }
+
+.fontSubTittle {
+  font-family: "Assistant", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2;
+  text-decoration: underline;
+  text-align: left; }
+
+.fontText {
+  font-family: "Abel", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 200;
+  text-align: justify;
+  line-height: 1.6; }
+
+.font__menu {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.8rem;
+  vertical-align: middle; }
+
+.aboutProperties, .container__about, .container__maternidad {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.container__about {
+  background-image: url("../img/background.jpg"); }
+  .container__about .fontLogo {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 2px 6px 6px rgba(0, 0, 0, 0.67); }
+
+.container__maternidad {
+  background-image: url("../img/maternidad.jpg"); }
+  .container__maternidad .fontLogo {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 2px 6px 6px rgba(0, 0, 0, 0.67); }
+
+.service__1, .service__2, .service__3, .service__4, .service__5, .service__6 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 * {
   margin: 0;
   padding: 0;
@@ -6,40 +67,6 @@
   font-family: "Abel", sans-serif; }
 
 /* FONTS */
-.fontLogo {
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  font-size: 1.1rem;
-  font-weight: 800; }
-
-.fontTittle {
-  font-family: "Assistant", sans-serif;
-  font-weight: 500;
-  font-size: 35px;
-  line-height: 2;
-  text-align: left; }
-
-.fontSubTittle {
-  font-family: "Assistant", sans-serif;
-  font-weight: 300;
-  font-size: 1.8rem;
-  line-height: 2;
-  text-decoration: underline;
-  text-align: left; }
-
-.fontText {
-  font-size: 1.6rem;
-  text-align: justify;
-  line-height: 1.6; }
-
-.font__menu {
-  font-family: "Rajdhani", sans-serif;
-  font-size: 0.8rem;
-  font-weight: 500;
-  letter-spacing: 0.2rem;
-  word-spacing: 0.8rem;
-  vertical-align: middle; }
-
 :root {
   --borderWidth: 3px; }
 
@@ -103,15 +130,6 @@
     filter: saturate(100%);
     transform: scale(1);
     z-index: 3; }
-  .service .service__1,
-  .service .service__2,
-  .service .service__3,
-  .service .service__4,
-  .service .service__5,
-  .service .service__6 {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
 
 /* ======== LOCATION ======== */
 .location {
@@ -168,6 +186,16 @@
   color: #fff;
   font-size: 1rem;
   padding: 0 0.5rem 0.5rem 0.5rem; }
+  .footer__fixed .footer__copy__fixed {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    font-weight: 100;
+    margin-top: 1rem;
+    word-spacing: 2px;
+    font-size: 0.9rem;
+    line-height: 2;
+    font-weight: 300; }
 
 /* ======== PROFESIONALES ======== */
 .container__medicList {
@@ -180,37 +208,37 @@
   align-content: center;
   margin: 0 auto; }
   .container__medicList .medicList__tittle {
-    font-size: 2rem; }
+    font-size: 3rem; }
 
 .medic {
   display: inline;
   text-align: center; }
   .medic img {
-    width: 100%;
-    /* position: relative;
-            border-radius: 20px;
-            overflow: hidden; */ }
+    width: 100%; }
 
 /* ======== INSTITUCIONAL ======== */
 .container__mvv .fontLogo {
   font-size: 3rem; }
 
-.container__about,
-.container__maternidad {
-  background-image: url("../img/background.jpg");
+.aboutProperties, .container__about, .container__maternidad {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative; }
 
+.container__about {
+  background-image: url("../img/background.jpg"); }
+  .container__about .fontLogo {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 2px 6px 6px rgba(0, 0, 0, 0.67); }
+
 .container__maternidad {
   background-image: url("../img/maternidad.jpg"); }
-
-.container__about .fontLogo,
-.container__maternidad .fontLogo {
-  font-size: 4rem;
-  color: #fff;
-  text-shadow: 2px 6px 6px rgba(0, 0, 0, 0.67); }
+  .container__maternidad .fontLogo {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 2px 6px 6px rgba(0, 0, 0, 0.67); }
 
 .blur {
   background: rgba(255, 255, 255, 0.25);
@@ -223,26 +251,25 @@
 
 .valores {
   text-align: justify; }
-
-.valores li {
-  list-style: none;
-  text-decoration: none; }
+  .valores li {
+    list-style: none;
+    text-decoration: none; }
 
 .mb-6 {
   margin-bottom: 4rem !important; }
 
 /* ======== CONTACTO ======== */
+.contactTittle {
+  font-size: 3rem; }
+
 .contact {
   width: 600px;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   border-radius: 10px;
   box-shadow: #26394d 0px 20px 30px -10px; }
 
 .btn__submit:hover {
   cursor: pointer; }
-
-.contactTittle {
-  font-size: 2rem; }
 
 /* ======== LOGIN ======== */
 .contenedor__login {

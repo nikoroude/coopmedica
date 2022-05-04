@@ -1,16 +1,8 @@
-$verde: #099d0a;
-$white: #fff;
-$black: #000;
-$fontLogo: 'Montserrat',
-sans-serif;
-$fontTittle: 'Assistant',
-sans-serif;
-$fontSubTittle: 'Assistant',
-sans-serif;
-$fontMenu: 'Rajdhani',
-sans-serif;
-$fontText: 'Abel',
-sans-serif;
+@import 'variables';
+@import 'mixin';
+@import 'maps';
+@import 'extend';
+
 
 
 * {
@@ -25,45 +17,6 @@ sans-serif;
 
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Assistant:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
-
-.fontLogo {
-    font-family: $fontLogo;
-    text-align: center;
-    font-size: 1.1rem;
-    font-weight: 800;
-}
-
-.fontTittle {
-    font-family: $fontTittle;
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 2;
-    text-align: left;
-}
-
-.fontSubTittle {
-    font-family: $fontSubTittle;
-    font-weight: 300;
-    font-size: 1.8rem;
-    line-height: 2;
-    text-decoration: underline;
-    text-align: left;
-}
-
-.fontText {
-    font-size: 1.6rem;
-    text-align: justify;
-    line-height: 1.6;
-}
-
-.font__menu {
-    font-family: $fontMenu;
-    font-size: 0.8rem;
-    font-weight: 500;
-    letter-spacing: 0.2rem;
-    word-spacing: 0.8rem;
-    vertical-align: middle;
-}
 
 :root {
     --borderWidth: 3px;
@@ -160,16 +113,16 @@ sans-serif;
         z-index: 3;
     }
 
-    .service__1,
-    .service__2,
-    .service__3,
-    .service__4,
-    .service__5,
-    .service__6 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    // .service__1,
+    // .service__2,
+    // .service__3,
+    // .service__4,
+    // .service__5,
+    // .service__6 {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
 }
 
 /* ======== LOCATION ======== */
@@ -186,7 +139,7 @@ sans-serif;
         flex-direction: column;
         align-content: space-between;
         justify-content: space-between;
-        margin-top: 2rem;
+        margin-top: $size1*2;
     }
 
 }
@@ -196,10 +149,10 @@ sans-serif;
 .footer {
     bottom: 0;
     font-family: $fontLogo;
-    background-color: rgb(44, 44, 44);
+    background-color: $colorFooter;
     color: $white;
-    font-size: 1rem;
-    padding: 1rem 1rem 0.5rem;
+    font-size: $size1;
+    padding: $size1 $size1 0.5rem;
 
     .containerFooter {
         display: inline;
@@ -218,13 +171,13 @@ sans-serif;
             }
         }
     }
-
+    
     .footer__copy {
         display: block;
         text-align: center;
         justify-content: center;
         font-weight: 100;
-        margin-top: 1rem;
+        margin-top: $size1;
         word-spacing: 2px;
         font-size: 0.9rem;
         line-height: 2;
@@ -238,16 +191,28 @@ sans-serif;
     bottom: 0;
     width: 100%;
     font-family: $fontLogo;
-    background-color: rgb(44, 44, 44);
+    background-color: $colorFooter;
     color: $white;
-    font-size: 1rem;
+    font-size: $size1;
     padding: 0 0.5rem 0.5rem 0.5rem;
+
+    .footer__copy__fixed {
+        display: block;
+        text-align: center;
+        justify-content: center;
+        font-weight: 100;
+        margin-top: $size1;
+        word-spacing: 2px;
+        font-size: 0.9rem;
+        line-height: 2;
+        font-weight: 300;
+    }
 }
 
 /* ======== PROFESIONALES ======== */
 
 .container__medicList {
-    gap: 2rem;
+    gap: $size1*2;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -257,7 +222,7 @@ sans-serif;
     margin: 0 auto;
     
     .medicList__tittle {
-        font-size: 2rem;
+        font-size: $size3;
     }
 }
 
@@ -267,9 +232,6 @@ sans-serif;
         
         img {
             width: 100%;
-            /* position: relative;
-            border-radius: 20px;
-            overflow: hidden; */
         }
     }
 
@@ -279,30 +241,10 @@ sans-serif;
 
 .container__mvv {
     .fontLogo {
-    font-size: 3rem;}
+    font-size: $size3;}
 }
 
-.container__about,
-.container__maternidad {
-    background-image: url("../img/background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.container__maternidad {
-    background-image: url("../img/maternidad.jpg");
-}
-
-.container__about .fontLogo,
-.container__maternidad .fontLogo {
-    font-size: 4rem;
-    color: #fff;
-    text-shadow: 2px 6px 6px rgba(0, 0, 0, 0.67);
-}
-
-
+@import 'maps';
 
 .blur {
     background: rgba(255, 255, 255, 0.25);
@@ -317,22 +259,26 @@ sans-serif;
 
 .valores {
     text-align: justify;
-}
 
-.valores li {
-    list-style: none;
-    text-decoration: none;
+    li {
+        list-style: none;
+        text-decoration: none;
+    }
 }
 
 .mb-6 {
-    margin-bottom: 4rem !important
+    margin-bottom: $size1*4 !important
 }
 
 /* ======== CONTACTO ======== */
 
+.contactTittle {
+    font-size: $size3;
+}
+
 .contact {
     width: 600px;
-    border: 1px solid #ffffff;
+    border: 1px solid $white;
     border-radius: 10px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
@@ -340,12 +286,6 @@ sans-serif;
 .btn__submit:hover {
     cursor: pointer;
 }
-
-.contactTittle {
-    font-size: 2rem;
-}
-
-
 
 /* ======== LOGIN ======== */
 
@@ -373,7 +313,7 @@ sans-serif;
 }
 
 .fontLogin {
-    font-size: 1rem;
+    font-size: $size1;
     line-height: 1.6;
 }
 
@@ -386,7 +326,7 @@ sans-serif;
 
     .container__about .fontLogo,
     .container__maternidad .fontLogo {
-        font-size: 2rem;
+        font-size: $size1*2;
     }
 
     .containerFooter {
@@ -473,7 +413,7 @@ sans-serif;
 
     .container__about .fontLogo,
     .container__maternidad .fontLogo {
-        font-size: 3rem;
+        font-size: $size3;
     }
 }
 
@@ -499,7 +439,7 @@ sans-serif;
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        column-gap: 2rem;
+        column-gap: $size1*2;
     }
 
     .location__map iframe {
@@ -510,7 +450,7 @@ sans-serif;
 
     .medicList {
         display: grid;
-        gap: 2rem;
+        gap: $size1*2;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(3, 1fr);
     }
@@ -563,14 +503,14 @@ sans-serif;
     }
 
     .capa h3 {
-        color: #fff;
+        color: $white;
         transition: all 500ms ease-out;
         margin-top: 30px;
         margin-bottom: 220px;
     }
 
     .capa p {
-        color: #fff;
+        color: $white;
         width: 100%;
         margin: auto;
         margin-top: 30px;
@@ -583,7 +523,7 @@ sans-serif;
         display: grid;
         grid-template-columns: repeat(3, auto);
         grid-template-rows: repeat(2, auto);
-        margin-top: 2rem;
+        margin-top: $size1*2;
     }
 }
 
