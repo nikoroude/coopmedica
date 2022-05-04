@@ -255,9 +255,6 @@
     list-style: none;
     text-decoration: none; }
 
-.mb-6 {
-  margin-bottom: 4rem !important; }
-
 /* ======== CONTACTO ======== */
 .contactTittle {
   font-size: 3rem; }
@@ -324,27 +321,27 @@
     font-size: 100%; }
   .content__text h3 {
     font-size: 100%; }
-  .medicList {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    margin: 0 auto; }
-  .medicList__img {
-    width: 80%; }
   .container__medicList {
     justify-content: flex-start; }
+    .container__medicList .medicList {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      margin: 0 auto; }
+      .container__medicList .medicList .medicList__img {
+        width: 80%; }
   .location__info {
     display: block; }
-  .location__infoTittle {
-    display: block; } }
+    .location__info .location__infoTittle {
+      display: block; } }
 
 @media screen and (max-width: 768px) {
   .service {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(6, auto); }
-  .service img {
-    width: 200%; }
+    .service img {
+      width: 200%; }
   .location__map iframe {
     width: auto; } }
 
@@ -371,60 +368,60 @@
     justify-content: center;
     align-items: center;
     column-gap: 2rem; }
-  .location__map iframe {
-    width: 600px;
-    height: 450px;
-    border: 0; }
-  .medicList {
+    .location iframe {
+      width: 600px;
+      height: 450px;
+      border: 0; }
+  .container__medicList .medicList {
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 1fr); }
-  .medicList__img {
-    width: 100%;
-    transition: all 500ms ease-out; }
-  .medic {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .medic figure {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    cursor: pointer; }
-  .capa {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(97, 109, 124, 0.6);
-    opacity: 0;
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(2.5px);
-    -webkit-backdrop-filter: blur(2.5px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18); }
-  .medic figure:hover > .capa {
-    opacity: 1;
-    visibility: visible; }
-  .medic figure:hover > .capa h3 {
-    margin-top: 70px;
-    margin-bottom: 15px; }
-  .capa h3 {
-    color: #fff;
-    transition: all 500ms ease-out;
-    margin-top: 30px;
-    margin-bottom: 220px; }
-  .capa p {
-    color: #fff;
-    width: 100%;
-    margin: auto;
-    margin-top: 30px; }
+    .container__medicList .medicList .medic {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .container__medicList .medicList .medic figure {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        cursor: pointer; }
+        .container__medicList .medicList .medic figure .capa {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(97, 109, 124, 0.6);
+          opacity: 0;
+          transition: all 500ms ease-out;
+          opacity: 0;
+          visibility: hidden;
+          text-align: center;
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          backdrop-filter: blur(2.5px);
+          -webkit-backdrop-filter: blur(2.5px);
+          border-radius: 10px;
+          border: 1px solid rgba(255, 255, 255, 0.18); }
+          .container__medicList .medicList .medic figure .capa h3 {
+            color: #fff;
+            transition: all 500ms ease-out;
+            margin-top: 30px;
+            margin-bottom: 220px; }
+          .container__medicList .medicList .medic figure .capa p {
+            color: #fff;
+            width: 100%;
+            margin: auto;
+            margin-top: 30px; }
+        .container__medicList .medicList .medic figure .medicList__img {
+          width: 100%;
+          transition: all 500ms ease-out; }
+        .container__medicList .medicList .medic figure:hover > .capa {
+          opacity: 1;
+          visibility: visible; }
+        .container__medicList .medicList .medic figure:hover > .capa h3 {
+          margin-top: 70px;
+          margin-bottom: 15px; }
   .service {
     grid-area: "servicios";
     grid-column: 1/3;

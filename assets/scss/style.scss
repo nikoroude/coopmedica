@@ -113,16 +113,6 @@
         z-index: 3;
     }
 
-    // .service__1,
-    // .service__2,
-    // .service__3,
-    // .service__4,
-    // .service__5,
-    // .service__6 {
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    // }
 }
 
 /* ======== LOCATION ======== */
@@ -171,7 +161,7 @@
             }
         }
     }
-    
+
     .footer__copy {
         display: block;
         text-align: center;
@@ -220,20 +210,20 @@
     justify-content: center;
     align-content: center;
     margin: 0 auto;
-    
+
     .medicList__tittle {
         font-size: $size3;
     }
 }
 
 .medic {
-        display: inline;
-        text-align: center;
-        
-        img {
-            width: 100%;
-        }
+    display: inline;
+    text-align: center;
+
+    img {
+        width: 100%;
     }
+}
 
 
 
@@ -241,7 +231,8 @@
 
 .container__mvv {
     .fontLogo {
-    font-size: $size3;}
+        font-size: $size3;
+    }
 }
 
 @import 'maps';
@@ -266,9 +257,9 @@
     }
 }
 
-.mb-6 {
-    margin-bottom: $size1*4 !important
-}
+// .mb-6 {
+//     margin-bottom: $size1*4 !important
+// }
 
 /* ======== CONTACTO ======== */
 
@@ -354,40 +345,41 @@
 /* ======== 768 ======== */
 
 @media screen and (min-width: 768px) {
-    .content__text .fontText {
-        font-size: 50%;
-    }
+    .content__text {
+        .fontText {
+            font-size: 50%;
+        }
 
-    .content__text h2 {
-        font-size: 100%;
-    }
+        h2 {
+            font-size: 100%;
+        }
 
-    .content__text h3 {
-        font-size: 100%;
-    }
-
-    .medicList {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        margin: 0 auto;
-
-    }
-
-    .medicList__img {
-        width: 80%;
+        h3 {
+            font-size: 100%;
+        }
     }
 
     .container__medicList {
         justify-content: flex-start;
+
+        .medicList {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            margin: 0 auto;
+
+            .medicList__img {
+                width: 80%;
+            }
+        }
     }
 
     .location__info {
         display: block;
-    }
 
-    .location__infoTittle {
-        display: block;
+        .location__infoTittle {
+            display: block;
+        }
     }
 }
 
@@ -396,14 +388,16 @@
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: repeat(6, auto);
+
+        img {
+            width: 200%;
+        }
     }
 
-    .service img {
-        width: 200%;
-    }
-
-    .location__map iframe {
-        width: auto;
+    .location__map {
+        iframe {
+            width: auto;
+        }
     }
 }
 
@@ -440,80 +434,80 @@
         justify-content: center;
         align-items: center;
         column-gap: $size1*2;
+
+        iframe {
+            width: 600px;
+            height: 450px;
+            border: 0;
+        }
     }
 
-    .location__map iframe {
-        width: 600px;
-        height: 450px;
-        border: 0;
-    }
+    .container__medicList {
+        .medicList {
+            display: grid;
+            gap: $size1*2;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(3, 1fr);
 
-    .medicList {
-        display: grid;
-        gap: $size1*2;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(3, 1fr);
-    }
+            .medic {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-    .medicList__img {
-        width: 100%;
-        transition: all 500ms ease-out;
-    }
+                figure {
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    cursor: pointer;
 
-    .medic {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+                    .capa {
+                        position: absolute;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(97, 109, 124, 0.6);
+                        opacity: 0;
+                        transition: all 500ms ease-out;
+                        opacity: 0;
+                        visibility: hidden;
+                        text-align: center;
+                        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                        backdrop-filter: blur(2.5px);
+                        -webkit-backdrop-filter: blur(2.5px);
+                        border-radius: 10px;
+                        border: 1px solid rgba(255, 255, 255, 0.18);
 
-    .medic figure {
-        position: relative;
-        overflow: hidden;
-        border-radius: 10px;
-        cursor: pointer;
-    }
+                        h3 {
+                            color: $white;
+                            transition: all 500ms ease-out;
+                            margin-top: 30px;
+                            margin-bottom: 220px;}
 
-    .capa {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(97, 109, 124, 0.6);
-        opacity: 0;
-        transition: all 500ms ease-out;
-        opacity: 0;
-        visibility: hidden;
-        text-align: center;
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-        backdrop-filter: blur(2.5px);
-        -webkit-backdrop-filter: blur(2.5px);
-        border-radius: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.18);
-    }
+                        p {
+                            color: $white;
+                            width: 100%;
+                            margin: auto;
+                            margin-top: 30px;}
+                    }
 
-    .medic figure:hover>.capa {
-        opacity: 1;
-        visibility: visible;
-    }
+                    .medicList__img {
+                        width: 100%;
+                        transition: all 500ms ease-out;
+                    }
 
-    .medic figure:hover>.capa h3 {
-        margin-top: 70px;
-        margin-bottom: 15px;
-    }
+                    &:hover>.capa {
+                        opacity: 1;
+                        visibility: visible;
+                    }
 
-    .capa h3 {
-        color: $white;
-        transition: all 500ms ease-out;
-        margin-top: 30px;
-        margin-bottom: 220px;
-    }
-
-    .capa p {
-        color: $white;
-        width: 100%;
-        margin: auto;
-        margin-top: 30px;
+                    &:hover>.capa h3 {
+                        margin-top: 70px;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
     }
 
     .service {
@@ -530,8 +524,9 @@
 /* ======== 1440 ======== */
 
 @media screen and (min-width: 1440px) {
-    .content__text .fontText {
-        font-size: 80%;
+    .content__text {
+        .fontText {
+            font-size: 80%;
+        }
     }
-
 }
