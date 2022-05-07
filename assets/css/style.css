@@ -66,6 +66,9 @@
   box-sizing: border-box;
   font-family: "Abel", sans-serif; }
 
+body {
+  overflow-x: hidden; }
+
 /* FONTS */
 :root {
   --borderWidth: 3px; }
