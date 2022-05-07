@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cooperativa Medica Uruguay Ltda." />
+    <meta name="description" content="Cartilla de medicos de Cooperativa Medica Uruguay Ltda. Excelentes profesionales con una reconocida trayectoria." />
     <meta name="author" content="Carlos Nicolas Roude" />
-    <meta name="keywords" content="Cooperativa, Medica, Uruguay, coop, coopmed" />
+    <meta name="keywords" content="Cooperativa, Medica, coop, medicos, profesionales, cirugia general, cardiologo, cardiologia, traumatologo, cirujano" />
     <link rel="shortcut icon" href="../assets/img/favicon.ico">
-    <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,128 +16,166 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
 
     <title>Profesionales - Cooperativa Medica Ltda.</title>
 
 </head>
 
-<body class="grid fontText">
+<body class="fontText">
 
-    <header class="cabecera">
-        <div class="cabecera__logo">
-            <a href="../index.html"><img id="logo" src="../assets/img/logo-noBG.png" alt="Cooperativa Medica Ltda."></a>
-            <h1 class="cabecera__textLogo fontLogo">Cooperativa Medica</h1>
+    <!-- NAVBAR -->
+
+    <nav class="navbar font__menu navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="../assets/img/logo.svg" alt="Cooperativa Medica" class="me-5" width="150" height="100" viewBox="0 0 3 2">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse font__menu" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="profesionales.html">PROFESIONALES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="institucional.html">INSTITUCIONAL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">CONTACTO</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acceder.html">ACCEDER</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
         </div>
-    </header>
-
-    <nav class="menu font__menu">
-        <ul class="menu__list font__menu">
-            <li><a href="../index.html" class="link">INICIO</a></li>
-            <li><a href="profesionales.html" class="link">PROFESIONALES</a></li>
-            <li><a href="institucional.html" class="link">INSTITUCIONAL</a></li>
-            <li><a href="contacto.html" class="link">CONTACTO</a></li>
-            <li><a href="acceder.html" class="link">ACCEDER</a></li>
-        </ul>
     </nav>
 
-    <section class="container__medicList">
-        <h1 class="medicList__tittle fontTittle">NUESTROS PROFESIONALES</h1>
-        <p class="info__medic">En nuestra institución podran realizar consulta con especialistas de gran trayectoria y reconocimiento. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae veniam debitis in fugiat. Totam reiciendis veritatis fugit dolores accusamus cumque tempora blanditiis, vel eius omnis nemo nesciunt soluta ex atque?</p>
-        <div class="medicList">
-            <div class="medic" data-aos="zoom-in">
-                <figure>
-                    <img class="medicList__img" src="../assets/img/doc/doc1.png" alt="doc1">
-                    <div class="capa">
-                        <h3 class="fontLogo">Dr. Lorem, ipsum dolor.</h3>
-                        <p>TCirujano Cardiovascular.</p>
-                        <p>Tel.: #### - ###-###</p>
-                    </div>
-                </figure>
-            </div>
-            <div class="medic" data-aos="zoom-in">
-                <figure>
-                    <img class="medicList__img" src="../assets/img/doc/doc2.png" alt="doc2">
-                    <div class="capa">
-                        <h3 class="fontLogo">Dr. Lorem, ipsum dolor.</h3>
-                        <p>Medicina General.</p>
-                        <p>Tel.: #### - ###-###</p>
-                    </div>
-                </figure>
-            </div>
-            <div class="medic" data-aos="zoom-in">
-                <figure>
-                    <img class="medicList__img" src="../assets/img/doc/doc3.png" alt="doc3">
-                    <div class="capa">
-                        <h3 class="fontLogo">Dr. Lorem, ipsum dolor.</h3>
-                        <p>Traumatología.</p>
-                        <p>Tel.: #### - ###-###</p>
-                    </div>
-                </figure>
-            </div>
-            <div class="medic" data-aos="zoom-in">
-                <figure>
-                    <img class="medicList__img" src="../assets/img/doc/doc4.png" alt="doc4">
-                    <div class="capa">
-                        <h3 class="fontLogo">Dr. Lorem, ipsum dolor.</h3>
-                        <p>Cirujano Vascular.</p>
-                        <p>Tel.: #### - ###-###</p>
-                    </div>
-                </figure>
-            </div>
-            <div class="medic" data-aos="zoom-in">
-                <figure>
-                    <img class="medicList__img" src="../assets/img/doc/doc5.png" alt="doc5">
-                    <div class="capa">
-                        <h3 class="fontLogo">Dr. Lorem, ipsum dolor.</h3>
-                        <p>Cirugia General.</p>
-                        <p>Tel.: #### - ###-###</p>
-                    </div>
-                </figure>
-            </div>
-            <div class="medic" data-aos="zoom-in">
-                <figure>
-                    <img class="medicList__img" src="../assets/img/doc/doc6.png" alt="doc6">
-                    <div class="capa">
-                        <h3 class="fontLogo">Dr. Lorem, ipsum dolor.</h3>
-                        <p>Cirugia General.</p>
-                        <p>Tel.: #### - ###-###</p>
-                    </div>
-                </figure>
-            </div>
-            <div class="medic" data-aos="zoom-in">
-                <figure>
-                    <img class="medicList__img" src="../assets/img/doc/doc7.png" alt="doc7">
-                    <div class="capa">
-                        <h3 class="fontLogo">Dr. Lorem, ipsum dolor.</h3>
-                        <p>Traumatologia.</p>
-                        <p>Tel.: #### - ###-###</p>
-                    </div>
-                </figure>
-            </div>
-            <div class="medic" data-aos="zoom-in">
-                <figure>
-                    <img class="medicList__img" src="../assets/img/doc/doc1.png" alt="doc8">
-                    <div class="capa">
-                        <h3 class="fontLogo">Dr. Lorem, ipsum dolor.</h3>
-                        <p>Urologia.</p>
-                        <p>Tel.: #### - ###-###</p>
-                    </div>
-                </figure>
-            </div>
-            <div class="medic" data-aos="zoom-in">
-                <figure>
-                    <img class="medicList__img" src="../assets/img/doc/doc2.png" alt="doc9">
-                    <div class="capa">
-                        <h3 class="fontLogo">Dr. Lorem, ipsum dolor.</h3>
-                        <p>Cardiologia.</p>
-                        <p>Tel.: #### - ###-###</p>
-                    </div>
-                </figure>
-            </div>
-        </div>
-    </section>
+    <div class="container-fluid">
 
-    <footer class="footer">
+        <!-- MEDICLIST -->
+
+        <section class="row container__medicList">
+            <div class="row medicList__text">
+                <h1 class="medicList__tittle fontLogo">NUESTROS PROFESIONALES</h1>
+                <p class="info__medic">En nuestra institución podran realizar consulta con especialistas de gran
+                    trayectoria
+                    y
+                    reconocimiento. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae veniam debitis in
+                    fugiat.
+                    Totam reiciendis veritatis fugit dolores accusamus cumque tempora blanditiis, vel eius omnis nemo
+                    nesciunt
+                    soluta ex atque?</p>
+            </div>
+            <div class="row medicList">
+                <div class="medic" data-aos="zoom-in">
+                    <figure>
+                        <img class="medicList__img" src="../assets/img/doc/doc1.png" alt="Mendizabal Raul">
+                        <div class="capa">
+                            <h3 class="fontLogo">Dr. Mendizabal, Raul Omar.</h3>
+                            <p>Cirujano Cardiovascular.</p>
+                            <p>Tel.: 03442 - 424-555</p>
+                        </div>
+                    </figure>
+                </div>
+                <div class="medic" data-aos="zoom-in">
+                    <figure>
+                        <img class="medicList__img" src="../assets/img/doc/doc2.png" alt="Roscuzo Roberto">
+                        <div class="capa">
+                            <h3 class="fontLogo">Dr. Roscuzo, Roberto Daniel.</h3>
+                            <p>Medicina General.</p>
+                            <p>Tel.: 03442 - 424-555</p>
+                        </div>
+                    </figure>
+                </div>
+                <div class="medic" data-aos="zoom-in">
+                    <figure>
+                        <img class="medicList__img" src="../assets/img/doc/doc3.png" alt="Tramontin Gustavo">
+                        <div class="capa">
+                            <h3 class="fontLogo">Dr. Tramontin, Gustavo Matias.</h3>
+                            <p>Traumatología.</p>
+                            <p>Tel.: 03442 - 424-555</p>
+                        </div>
+                    </figure>
+                </div>
+                <div class="medic" data-aos="zoom-in">
+                    <figure>
+                        <img class="medicList__img" src="../assets/img/doc/doc4.png" alt="Romero Jose">
+                        <div class="capa">
+                            <h3 class="fontLogo">Dr. Romero, Jose Maria.</h3>
+                            <p>Cirujano Vascular.</p>
+                            <p>Tel.: 03442 - 424-555</p>
+                        </div>
+                    </figure>
+                </div>
+                <div class="medic" data-aos="zoom-in">
+                    <figure>
+                        <img class="medicList__img" src="../assets/img/doc/doc5.png" alt="Anderi Juliana">
+                        <div class="capa">
+                            <h3 class="fontLogo">Dr. Anderi, Juliana Romina.</h3>
+                            <p>Cirugia General.</p>
+                            <p>Tel.: 03442 - 424-555</p>
+                        </div>
+                    </figure>
+                </div>
+                <div class="medic" data-aos="zoom-in">
+                    <figure>
+                        <img class="medicList__img" src="../assets/img/doc/doc6.png" alt="Martinez Maria">
+                        <div class="capa">
+                            <h3 class="fontLogo">Dr. Martinez, Maria Marta.</h3>
+                            <p>Cirugia General.</p>
+                            <p>Tel.: 03442 - 424-555</p>
+                        </div>
+                    </figure>
+                </div>
+                <div class="medic" data-aos="zoom-in">
+                    <figure>
+                        <img class="medicList__img" src="../assets/img/doc/doc7.png" alt="Jurado Jorge">
+                        <div class="capa">
+                            <h3 class="fontLogo">Dr. Jurado, Jorge Daniel.</h3>
+                            <p>Traumatologia.</p>
+                            <p>Tel.: 03442 - 424-555</p>
+                        </div>
+                    </figure>
+                </div>
+                <div class="medic" data-aos="zoom-in">
+                    <figure>
+                        <img class="medicList__img" src="../assets/img/doc/doc1.png" alt="Chaparro Fernando">
+                        <div class="capa">
+                            <h3 class="fontLogo">Dr. Chaparro, Fernando Ariel.</h3>
+                            <p>Urologia.</p>
+                            <p>Tel.: 03442 - 424-555</p>
+                        </div>
+                    </figure>
+                </div>
+                <div class="medic" data-aos="zoom-in">
+                    <figure>
+                        <img class="medicList__img" src="../assets/img/doc/doc2.png" alt="Reyes Juan">
+                        <div class="capa">
+                            <h3 class="fontLogo">Dr. Reyes, Juan Pablo.</h3>
+                            <p>Cardiologia.</p>
+                            <p>Tel.: 03442 - 424-555</p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="row footer">
         <div class="containerFooter">
             <p>Legales</p>
             <p>Términos y condiciones de uso</p>
@@ -151,10 +188,12 @@
                 Roude.</p>
         </div>
     </footer>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

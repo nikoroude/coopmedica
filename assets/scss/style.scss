@@ -1,0 +1,532 @@
+@import 'variables';
+@import 'mixin';
+@import 'maps';
+@import 'extend';
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fontText;
+}
+
+
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Assistant:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+    --borderWidth: 3px;
+}
+
+/* ======== GRID ======== */
+/* ======== BODY ======== */
+
+
+/* ======== HEADER ======== */
+
+.header__container {
+    .nav-link {
+        color: $black;
+        font-weight: 800;
+
+        .active {
+            color: $verde;
+            font-weight: 900;
+        }
+    }
+
+    .link {
+        color: $black;
+        text-decoration: none;
+
+        &:hover {
+            color: $verde;
+        }
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 2px;
+            background-color: $verde;
+            border-radius: 4px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform .25s ease;
+        }
+
+        &:hover::after {
+            transform: scaleX(1);
+        }
+    }
+}
+
+/* ======== NOVEDADES ======== */
+
+.novedades__content {
+    margin: 0 auto;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+    img {
+        width: 100%;
+    }
+}
+
+/* ======== CONTENT ======== */
+
+
+.contenido__central {
+    img {
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    }
+
+    .content__text {
+        width: 100;
+        margin: 0 auto;
+    }
+}
+
+/* ======== SERVICIOS ======== */
+
+.service {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: repeat(3, 1fr);
+
+    img {
+        width: 80%;
+        transform: scale(0.8);
+        filter: saturate(0);
+    }
+
+    img:hover {
+        filter: saturate(100%);
+        transform: scale(1);
+        z-index: 3;
+    }
+
+}
+
+/* ======== LOCATION ======== */
+
+.location {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    iframe {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        justify-content: space-between;
+        margin-top: $size1*2;
+    }
+
+}
+
+/* ======== FOOTER ======== */
+
+.footer {
+    bottom: 0;
+    font-family: $fontLogo;
+    background-color: $colorFooter;
+    color: $white;
+    font-size: $size1;
+    padding: $size1 $size1 0.5rem;
+
+    .containerFooter {
+        display: inline;
+        line-height: 1.5;
+        text-align: right;
+
+        a {
+            color: $white;
+            text-decoration: none;
+            line-height: 0.8;
+
+            .underline {
+                display: block;
+                font-size: 0.8rem;
+                font-weight: 100;
+            }
+        }
+    }
+
+    .footer__copy {
+        display: block;
+        text-align: center;
+        justify-content: center;
+        font-weight: 100;
+        margin-top: $size1;
+        word-spacing: 2px;
+        font-size: 0.9rem;
+        line-height: 2;
+        font-weight: 300;
+    }
+}
+
+.footer__fixed {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: $fontLogo;
+    background-color: $colorFooter;
+    color: $white;
+    font-size: $size1;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+
+    .footer__copy__fixed {
+        display: block;
+        text-align: center;
+        justify-content: center;
+        font-weight: 100;
+        margin-top: $size1;
+        word-spacing: 2px;
+        font-size: 0.9rem;
+        line-height: 2;
+        font-weight: 300;
+    }
+}
+
+/* ======== PROFESIONALES ======== */
+
+.container__medicList {
+    gap: $size1*2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+
+    .medicList__tittle {
+        font-size: $size3;
+    }
+}
+
+.medic {
+    display: inline;
+    text-align: center;
+
+    img {
+        width: 100%;
+    }
+}
+
+
+
+/* ======== INSTITUCIONAL ======== */
+
+.container__mvv {
+    .fontLogo {
+        font-size: $size3;
+    }
+}
+
+@import 'maps';
+
+.blur {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+.col-12 {
+    height: 600px;
+}
+
+.valores {
+    text-align: justify;
+
+    li {
+        list-style: none;
+        text-decoration: none;
+    }
+}
+
+// .mb-6 {
+//     margin-bottom: $size1*4 !important
+// }
+
+/* ======== CONTACTO ======== */
+
+.contactTittle {
+    font-size: $size3;
+}
+
+.contact {
+    width: 600px;
+    border: 1px solid $white;
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.btn__submit:hover {
+    cursor: pointer;
+}
+
+/* ======== LOGIN ======== */
+
+.contenedor__login {
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+    width: 320px;
+    margin: 0 auto;
+}
+
+.login {
+    justify-content: center;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn__login:hover {
+    cursor: pointer;
+}
+
+.fontLogin {
+    font-size: $size1;
+    line-height: 1.6;
+}
+
+
+/* ======== @MEDIA ======== */
+
+/* ======== 576 ======== */
+
+@media screen and (max-width:576px) {
+
+    .container__about .fontLogo,
+    .container__maternidad .fontLogo {
+        font-size: $size1*2;
+    }
+
+    .containerFooter {
+        display: block;
+        text-align: center;
+    }
+
+    .medicList__tittle {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .font__menu {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width:992) {
+    .content__text {
+        width: 50%;
+    }
+}
+
+/* ======== 768 ======== */
+
+@media screen and (min-width: 768px) {
+    .content__text {
+        .fontText {
+            font-size: 50%;
+        }
+
+        h2 {
+            font-size: 100%;
+        }
+
+        h3 {
+            font-size: 100%;
+        }
+    }
+
+    .container__medicList {
+        justify-content: flex-start;
+
+        .medicList {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            margin: 0 auto;
+
+            .medicList__img {
+                width: 80%;
+            }
+        }
+    }
+
+    .location__info {
+        display: block;
+
+        .location__infoTittle {
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .service {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(6, auto);
+
+        img {
+            width: 200%;
+        }
+    }
+
+    .location__map {
+        iframe {
+            width: auto;
+        }
+    }
+}
+
+/* ======== 800 ======== */
+
+@media screen and (max-width:880px) {
+
+    .container__about .fontLogo,
+    .container__maternidad .fontLogo {
+        font-size: $size3;
+    }
+}
+
+/* ======== 880 ======== */
+
+@media screen and (max-width:800px) {
+    .contact {
+        width: 100%;
+    }
+}
+
+/* ======== 1024 ======== */
+
+@media screen and (min-width: 1024px) {
+    #logo {
+        width: 150px;
+        margin: 0.5rem;
+    }
+
+    .location {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: $size1*2;
+
+        iframe {
+            width: 600px;
+            height: 450px;
+            border: 0;
+        }
+    }
+
+    .container__medicList {
+        .medicList {
+            display: grid;
+            gap: $size1*2;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(3, 1fr);
+
+            .medic {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                figure {
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    cursor: pointer;
+
+                    .capa {
+                        position: absolute;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(97, 109, 124, 0.6);
+                        opacity: 0;
+                        transition: all 500ms ease-out;
+                        opacity: 0;
+                        visibility: hidden;
+                        text-align: center;
+                        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                        backdrop-filter: blur(2.5px);
+                        -webkit-backdrop-filter: blur(2.5px);
+                        border-radius: 10px;
+                        border: 1px solid rgba(255, 255, 255, 0.18);
+
+                        h3 {
+                            color: $white;
+                            transition: all 500ms ease-out;
+                            margin-top: 30px;
+                            margin-bottom: 220px;}
+
+                        p {
+                            color: $white;
+                            width: 100%;
+                            margin: auto;
+                            margin-top: 30px;}
+                    }
+
+                    .medicList__img {
+                        width: 100%;
+                        transition: all 500ms ease-out;
+                    }
+
+                    &:hover>.capa {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+
+                    &:hover>.capa h3 {
+                        margin-top: 70px;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .service {
+        grid-area: "servicios";
+        grid-column: 1/3;
+        grid-row: 5/6;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+        margin-top: $size1*2;
+    }
+}
+
+/* ======== 1440 ======== */
+
+@media screen and (min-width: 1440px) {
+    .content__text {
+        .fontText {
+            font-size: 80%;
+        }
+    }
+}

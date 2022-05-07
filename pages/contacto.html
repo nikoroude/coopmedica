@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cooperativa Medica Uruguay Ltda." />
+    <meta name="description" content="Comunicate a traves de nuestras multiples opciones de contacto. Podes hacerlo via telefonica, whatsapp o via email. Cooperativa Medica Uruguay, 50 años al cuidando de la salud de los uruguayenses." />
     <meta name="author" content="Carlos Nicolas Roude" />
-    <meta name="keywords" content="Cooperativa, Medica, Uruguay, coop, coopmed" />
+    <meta name="keywords" content="Cooperativa, Medica, concepcion del uruguay, coop, coopmed, medicos, medicina, contacto, telefono, maternidad" />
     <link rel="shortcut icon" href="../assets/img/favicon.ico">
-    <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,106 +16,126 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
 
     <title>Contacto - Cooperativa Medica Ltda.</title>
 
 </head>
 
-<body class="grid fontText">
+<body class="fontText">
 
-    <header class="cabecera">
-        <div class="cabecera__logo">
-            <a href="../index.html"><img id="logo" src="../assets/img/logo-noBG.png" alt="Cooperativa Medica Ltda."></a>
-            <h1 class="cabecera__textLogo fontLogo">Cooperativa Medica</h1>
+    <!-- NAVBAR -->
+
+    <nav class="navbar font__menu navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="../assets/img/logo.svg" alt="Cooperativa Medica" class="me-5" width="150" height="100" viewBox="0 0 3 2">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profesionales.html">PROFESIONALES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="institucional.html">INSTITUCIONAL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">CONTACTO</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acceder.html">ACCEDER</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
         </div>
-    </header>
-
-    <nav class="menu font__menu">
-        <ul class="menu__list font__menu">
-            <li><a href="../index.html" class="link">INICIO</a></li>
-            <li><a href="profesionales.html" class="link">PROFESIONALES</a></li>
-            <li><a href="institucional.html" class="link">INSTITUCIONAL</a></li>
-            <li><a href="contacto.html" class="link">CONTACTO</a></li>
-            <li><a href="acceder.html" class="link">ACCEDER</a></li>
-        </ul>
     </nav>
 
-    <div class="container__contact">
-        <div class="contact__info">
-                <h1 class="fontTittle contactTittle animate__animated animate__slideInLeft">CONTACTO</h1>
-                <p>Puedes contactarnos por medio de los siguientes canales:</p>
-                <ul class="contact__infoList animate__animated animate__slideInLeft">
-                    <li class="fontSubTittle">Administración</li>
-                    <ul>
-                        <li>03442 - 424555 int 24</li>
-                        <li>03442 - 427001</li>
-                        <li>03442 - 428565</li>
-                        <li>coopprestador@gmail.com</li>
-                        <li>coopmed12@gmail.com</li>
-                    </ul>
-                    <li class="fontSubTittle">ART</li>
-                    <ul>
-                        <li>03442 - 424555 int 24</li>
-                        <li>03442 - 427001</li>
-                        <li>03442 - 428565</li>
-                        <li>art.coopmedica@gmail.com</li>
-                    </ul>
-                    <li class="fontSubTittle">Tesoreria y Pagos a proveedores</li>
-                    <ul>
-                        <li>03442 - 424555 int 20</li>
-                        <li>coopmedt@gmail.com</li>
-                    </ul>
-                </ul>
+    <div class="container-fluid">
+
+        <!-- CONTACT INFO-->
+
+        <div class="container-fluid text-center">
+            <div class="row d-flex align-items-start justify-content-around">
+                <h1 class="fontLogo contactTittle animate__animated animate__slideInLeft mt-5 mb-5">CONTACTO</h1>
+                <div class="col-md-12 col-lg-4 mb-5 text-center valores gradient-border contact__info"
+                    data-aos="zoom-in">
+                    <h2 class="fontSubTittle text-center">Administración</h2>
+                    <p>(03442) - 424555 int 24</p>
+                    <p>(03442) - 427001 / 428565</p>
+                    <p>coopprestador@gmail.com</p>
+                    <p>coopmed12@gmail.com</p>
+                </div>
+
+                <div class="col-md-12 col-lg-4 mb-5 text-center valores contact__info" data-aos="zoom-in">
+                    <h2 class="fontSubTittle text-center">Tesoreria y Pago a proveedores</h2>
+                    <p>03442 - 424555 int 20</p>
+                    <p>coopmedt@gmail.com</p>
+                </div>
+
+                <div class="col-md-12 col-lg-4 mb-5 valores text-center contact__info" data-aos="zoom-in">
+                    <h2 class="fontSubTittle text-center">Gardia y Consultorios</h2>
+                    <p>(03442) - 424555 int 21</p>
+                    <p>(03442) - 424555 int 22</p>
+                </div>
             </div>
-            <div class="contact__form animate__animated animate__slideInRight">
-                <p class="contact__formText">
-                    Si tienes alguna duda en particular, te invitamos a llenar el formulario de contacto a
-                continuacion. Todos los campos son obligatorios.</p>
-                <div class="contact__formArea fontContact" data-aos="flip-left"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="2500" data-aos-delay="1000">
-                    <h3 class="contact__tittle">Formulario de contacto</h3>
-                <form action="log.php" method="post" name="formcontac">
-                    <div>
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" id="nombre" placeholder="Su Nombre">
-                    </div>
-                    <div>
-                        <label for="apellido">Contraseña</label>
-                        <input type="text" name="apellido" id="apellido" placeholder="Su Apellido">
-                    </div>
-                    <div>
-                        <label for="obrasocial">¿Posee obra social?</label>
-                        <input type="text" name="obrasocial" id="obrasocial" placeholder="Su obra social">
-                    </div>
-                    <div>
-                        <label for="email">E-mail de contacto</label>
-                        <input type="email" name="email" id="email" placeholder="ejemplo@email.com">
-                    </div>
-                    <div>
-                        <label for="opciones">Motivo de consulta</label>
-                        <select name="opciones" id="opciones">
-                            <option value selected disable></option>
-                            <option value="turnos">Turnos</option>
-                            <option value="obrasociales">Obras sociales y prepagas</option>
-                            <option value="profesionales">Profesionales</option>
-                            <option value="otro">Otro</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="mensaje">Su consulta:</label>
-                        <textarea name="mensaje" id="mensaje" cols="30" rows="10"
-                            placeholder="Ingrese su consulta"></textarea>
-                    </div>
-                    <div class="btn">
-                        <input class="btn__submit" type="submit" id="enviar" value="ENVIAR CONSULTA">
-                    </div>
-                </form>
+
+            <!-- CONTACT FORM -->
+
+            <div class="container-fluid col-lg col-md d-flex justify-content-center contact__formArea mt-5 mb-5">
+                <div class="contact">
+                    <h3 class="fontSubTittle text-center">Formulario de contacto</h3>
+                    <form class="p-5">
+                        <div class="form-group">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" name="apellido" id="apellido" class="form-control"
+                                placeholder="Apellido">
+                        </div>
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail de contacto</label>
+                            <input type="email" name="email" id="email" class="form-control"
+                                placeholder="nombre@ejemplo.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="motivo">Motivo de Consulta</label>
+                            <select name="opciones" id="opciones" class="form-select form-select mb-3"
+                                aria-label=".form-select-lg">
+                                <option selected>Elige una opción</option>
+                                <option>Turnos</option>
+                                <option>Obras sociales y prepagas</option>
+                                <option>Profesionales</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Ingrese su consulta</label>
+                            <textarea class="form-control" name="mensaje" id="mensaje" rows="5"></textarea>
+                        </div>
+                        <button type="submit" id="submit" class="btn btn__submit btn-primary mt-5">ENVIAR CONSULTA</button>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
 
-    <footer class="footer">
+    <!-- FOOTER -->
+
+    <footer class="row footer">
         <div class="containerFooter">
             <p>Legales</p>
             <p>Términos y condiciones de uso</p>
@@ -125,7 +144,8 @@
                     Consumidor<strong class="underline">(Para reclamos ingrese aquí)</strong></a></p>
         </div>
         <div class="footer__copy">
-            <p>Copyright 2022 | Cooperativa Medica Ltda. | Todos los derechos reservados | Sitio web por Carlos Nicolas
+            <p>Copyright 2022 | Cooperativa Medica Ltda. | Todos los derechos reservados | Sitio web por
+                Carlos Nicolas
                 Roude.</p>
         </div>
     </footer>
@@ -133,6 +153,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

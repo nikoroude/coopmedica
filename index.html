@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cooperativa Medica Uruguay Ltda." />
+    <meta name="description" content="Somos el principal sanatorio de la costa del uruguay. Contamos con servicios de maternidad, neonatologia, diagnostico por imagenes y mas. Ingresa para ver todos los servicios que ofrecemos pensando siempre en la mejor atención." />
     <meta name="author" content="Carlos Nicolas Roude" />
-    <meta name="keywords" content="Cooperativa, Medica, Uruguay, coop, coopmed" />
+    <meta name="keywords" content="Cooperativa, Medica, concepcion del uruguay, coop, cardiologo, maternidad, neonatologia, tomografia, resonancia, medicos" />
     <link rel="shortcut icon" href="./assets/img/favicon.ico">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,124 +16,187 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Cooperativa Medica Ltda.</title>
 
 </head>
 
-<body class="grid fontText">
+<body class="fontText">
 
-    <header class="cabecera">
-        <div class="cabecera__logo">
-            <a href="index.html"><img id="logo" src="assets/img/logo-noBG.png" alt="Cooperativa Medica Ltda."></a>
-            <h1 class="cabecera__textLogo fontLogo">Cooperativa Medica</h1>
-        </div>
+    <!-- NAVBAR -->
+    <header class="header__container">
+        <nav class="navbar font__menu navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <img src="assets/img/logo.svg" alt="Cooperativa Medica" class="me-5" width="150" height="100" viewBox="0 0 3 2">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse font__menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/profesionales.html">PROFESIONALES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/institucional.html">INSTITUCIONAL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/acceder.html">ACCEDER</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <nav class="menu font__menu">
-        <ul class="menu__list font__menu">
-            <li><a href="index.html" class="link">INICIO</a></li>
-            <li><a href="pages/profesionales.html" class="link">PROFESIONALES</a></li>
-            <li><a href="pages/institucional.html" class="link">INSTITUCIONAL</a></li>
-            <li><a href="pages/contacto.html" class="link">CONTACTO</a></li>
-            <li><a href="pages/acceder.html" class="link">ACCEDER</a></li>
-        </ul>
-    </nav>
-
-    <section class="novedades">
-        <div class="novedades__content">
-            <img src="assets/img/nos.jpg" alt="Obras sociales">
-        </div>
-    </section>
-
-    <section class="content">
-        <div class="content__1">
-            <img data-aos="fade-right" class="content__imgL" src="assets/img/staffprofesionales.jpg"
-                alt="Staff de PROFESIONALES">
-            <aside data-aos="fade-left" class="content__text">
-                <h2 class="fontTittle">Staff de PROFESIONALES</h2>
-                <h3 class="fontSubTittle">Consultorios Externos</h3>
-                <p class="fontText">Integrado por Profesionales de nuestro Staff permanente que tienen agenda abierta
-                    tanto en
-                    Cooperativa
-                    Medica como en Centro Médico ubicado en <strong>14 de julio 370</strong>. Lorem, ipsum dolor sit
-                    amet consectetur adipisicing elit. Facilis dolore unde animi deserunt enim autem, nulla aliquam,
-                    repudiandae exercitationem aut cumque a ipsa sequi soluta mollitia ullam quisquam placeat molestiae,
-                    eum itaque. Laborum, atque.</p>
-                <h3 class="fontSubTittle">Médicos Invitados</h3>
-                <p class="fontText">Profesionales que no realizan consultorio en nuestras Instituciones, pero que pueden
-                    solicitar turno
-                    para
-                    realizar prácticas quirúrgicas. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </aside>
+    <!-- CAROUSEL -->
+    <div class="container-fluid">
+        <div id="novedades" class="novedades__content carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#novedades" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#novedades" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#novedades" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/nos.jpg" alt="Obras sociales">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/slide2.jpg" alt="Diagnostico por imagenes">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/slide3.jpg" alt="Semana de vacunacion">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#novedades" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#novedades" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
         </div>
 
-        <div class="content__2">
-            <img class="content__imgR" src="assets/img/maternidad.jpg"
-                alt="Area de Maternidad y Neonatologia" data-aos="fade-left" data-aos-duration="1000">
-            <aside class="content__text" data-aos="fade-right" data-aos-duration="1000">
-                <h2 class="fontTittle">Area de MATERNIDAD y NEONATOLOGIA</p>
-                    <h3 class="fontSubTittle">Maternidad</h3>
-                    <p class="fontText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nobis a velit
-                        earum, itaque iure
-                        fugit
-                        autem distinctio doloremque accusamus odit, aspernatur, architecto magni hic asperiores cum!
-                        Accusamus nobis recusandae ad deleniti veritatis culpa vero perferendis ab perspiciatis natus
-                        nihil
-                        et id, minima tenetur odit consectetur placeat nemo, repellat iste inventore?
-                    </p>
-                    <h3 class="fontSubTittle">Neonatologia</h3>
-                    <p class="fontText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi exercitationem
-                        quaerat quos at
-                        quis,
-                        mollitia recusandae cum maiores soluta ipsam illo. Pariatur architecto earum ex officia.
-                        Asperiores
-                        quisquam blanditiis hic debitis incidunt molestias, autem excepturi enim delectus assumenda unde
-                        explicabo.</p>
-            </aside>
-        </div>
-    </section>
+        <!-- CONTENT -->
 
-    <div class="service" data-aos="flip-up" data-aos-duration="2000">
-        <div class="service__1">
-            <img src="assets/img/turnos.jpg" alt="Central de turnos">
+        <section class="row mt-5 contenido__central">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 justify-content-between text-center">
+                    <img data-aos="fade-right" class="content__imgL" src="assets/img/staffprofesionales.jpg"
+                        alt="Staff de PROFESIONALES">
+                </div>
+                <aside data-aos="fade-left" class="col-lg-6 col-md-12 content__text">
+                    <h1 class="fontTittle">Staff de PROFESIONALES</h1>
+                    <h3 class="fontSubTittle">Consultorios Externos</h3>
+                    <p class="fontText">Integrado por Profesionales de nuestro Staff permanente que tienen agenda
+                        abierta
+                        tanto en
+                        Cooperativa
+                        Medica como en Centro Médico ubicado en <strong>14 de julio 370</strong>. Lorem, ipsum dolor sit
+                        amet consectetur adipisicing elit. Facilis dolore unde animi deserunt enim autem, nulla aliquam,
+                        repudiandae exercitationem aut cumque a ipsa sequi soluta mollitia ullam quisquam placeat
+                        molestiae,
+                        eum itaque. Laborum, atque.</p>
+                    <h3 class="fontSubTittle">Médicos Invitados</h3>
+                    <p class="fontText">Profesionales que no realizan consultorio en nuestras Instituciones, pero que
+                        pueden
+                        solicitar turno
+                        para
+                        realizar prácticas quirúrgicas. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </aside>
+            </div>
+
+            <div class="row mt-5 d-flex flex-row-reverse">
+                <div class="col-lg-6 col-md-12 justify-content-between text-center contenido__central">
+                    <img data-aos="fade-right" class="content__imgR" src="assets/img/maternidad.jpg"
+                        alt="Area de Maternidad y Neonatologia">
+                </div>
+                <aside data-aos="fade-left" class="col-lg-6 col-md-12 content__text">
+                    <h2 class="fontTittle">Area de MATERNIDAD y NEONATOLOGIA</p>
+                        <h3 class="fontSubTittle">Maternidad</h3>
+                        <p class="fontText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nobis a velit
+                            earum, itaque iure
+                            fugit
+                            autem distinctio doloremque accusamus odit, aspernatur, architecto magni hic asperiores cum!
+                            Accusamus nobis recusandae ad deleniti veritatis culpa vero perferendis ab perspiciatis
+                            natus
+                            nihil
+                            et id, minima tenetur odit consectetur placeat nemo, repellat iste inventore?
+                        </p>
+                        <h3 class="fontSubTittle">Neonatologia</h3>
+                        <p class="fontText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                            exercitationem
+                            quaerat quos at
+                            quis,
+                            mollitia recusandae cum maiores soluta ipsam illo. Pariatur architecto earum ex officia.
+                            Asperiores
+                            quisquam blanditiis hic debitis incidunt molestias, autem excepturi enim delectus assumenda
+                            unde
+                            explicabo.</p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+
+        <div class="container service" data-aos="flip-up" data-aos-duration="2000">
+            <div class="service__1">
+                <img src="assets/img/turnos.jpg" alt="Central de turnos">
+            </div>
+            <div class="service__2">
+                <img src="assets/img/demanda.jpg" alt="Demanda espontanea">
+            </div>
+            <div class="service__3">
+                <img src="assets/img/visitas.jpg" alt="Horarios de visitas">
+            </div>
+            <div class="service__4">
+                <img src="assets/img/lab.jpg" alt="Laboratorio">
+            </div>
+            <div class="service__5">
+                <img src="assets/img/diagimg.jpg" alt="Diagnostico por imagenes">
+            </div>
+            <div class="service__6">
+                <img src="assets/img/far.jpg" alt="Farmacia">
+            </div>
         </div>
-        <div class="service__2">
-            <img src="assets/img/demanda.jpg" alt="Demanda espontanea">
-        </div>
-        <div class="service__3">
-            <img src="assets/img/visitas.jpg" alt="Horarios de visitas">
-        </div>
-        <div class="service__4">
-            <img src="assets/img/lab.jpg" alt="Laboratorio">
-        </div>
-        <div class="service__5">
-            <img src="assets/img/diagimg.jpg" alt="Diagnostico por imagenes">
-        </div>
-        <div class="service__6">
-            <img src="assets/img/far.jpg" alt="Farmacia">
-        </div>
+
+        <!-- LOCATION -->
+
+        <section class="location m-3">
+            <div class="location__map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13462.926056644646!2d-58.2366071!3d-32.4798723!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3f77b25d95e8d607!2sCooperativa%20M%C3%A9dica%20Ltda!5e0!3m2!1ses-419!2sar!4v1647736040012!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" title="Nuestra Ubicacion" loading="lazy">UBICACION</iframe>
+            </div>
+            <div class="location__info">
+                <p class="fontTittle location__infoTitle">UBICACION</p>
+                <P class="location__info__text">Nos encontramos en la ciudad de Concepcion del Uruguay en 14 de Julio
+                    377.
+                </P>
+                <p class="location__info__text">Para mas información ponte en <strong><a
+                            href="./pages/contacto.html">CONTACTO</a></strong>
+                    con nosotros.</p>
+            </div>
+        </section>
     </div>
 
-
-    <section class="location">
-        <div class="location__map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13462.926056644646!2d-58.2366071!3d-32.4798723!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3f77b25d95e8d607!2sCooperativa%20M%C3%A9dica%20Ltda!5e0!3m2!1ses-419!2sar!4v1647736040012!5m2!1ses-419!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">UBICACION</iframe>
-        </div>
-        <div class="location__info">
-            <p class="fontTittle location__infoTitle">UBICACION</p>
-            <P class="location__info__text">Nos encontramos en la ciudad de Concepcion del Uruguay en 14 de Julio
-                377.
-            </P>
-            <p class="location__info__text">Para mas información ponte en <strong><a
-                        href="./pages/contacto.html">CONTACTO</a></strong>
-                con nosotros.</p>
-        </div>
-    </section>
-
+    <!-- FOOTER -->
 
     <footer class="footer">
         <div class="containerFooter">
@@ -154,6 +216,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

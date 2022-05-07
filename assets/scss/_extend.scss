@@ -1,0 +1,11 @@
+.service__1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@for $i from 2 through 6 {
+    .service__#{$i} {
+        @extend .service__1;
+    }
+}
