@@ -14,6 +14,8 @@
 
 body {
     overflow-x:hidden;
+    text-align: center;
+    justify-content: space-between;
 }
 
 
@@ -214,15 +216,22 @@ body {
     justify-content: center;
     align-content: center;
     margin: 0 auto;
-
-    .medicList__tittle {
-        font-size: $size3;
-    }
 }
 
 .medic {
     display: inline;
     text-align: center;
+
+    .capa {
+        a {
+            text-decoration: none;
+            color: $black;
+            
+            &:hover {
+                color: $verde;
+            }
+        }
+    }
 
     img {
         width: 100%;
@@ -235,7 +244,7 @@ body {
 
 .container__mvv {
     .fontLogo {
-        font-size: $size3;
+        font-size: $size1;
     }
 }
 
@@ -261,14 +270,29 @@ body {
     }
 }
 
-// .mb-6 {
-//     margin-bottom: $size1*4 !important
-// }
+.vision {
+    @extend .valores;
+}
+
+.mision {
+    @extend .valores;
+}
 
 /* ======== CONTACTO ======== */
 
 .contactTittle {
     font-size: $size3;
+}
+
+.contact__info {
+    a {
+        text-decoration: none;
+        color: $black;
+        
+        &:hover {
+            color: $verde;
+        }
+    }
 }
 
 .contact {
@@ -318,18 +342,8 @@ body {
 /* ======== 576 ======== */
 
 @media screen and (max-width:576px) {
-
-    .container__about .fontLogo,
-    .container__maternidad .fontLogo {
-        font-size: $size1*2;
-    }
-
     .containerFooter {
         display: block;
-        text-align: center;
-    }
-
-    .medicList__tittle {
         text-align: center;
     }
 }
@@ -363,8 +377,18 @@ body {
         }
     }
 
+    .container__about .fontLogo,
+    .container__maternidad .fontLogo {
+        font-size: $size1*2;
+    }
+
     .container__medicList {
         justify-content: flex-start;
+        
+        .medicList__text {
+            .medicList__tittle {
+                font-size: $size1*2;}
+        }
 
         .medicList {
             display: grid;
@@ -378,6 +402,12 @@ body {
         }
     }
 
+    .container__mvv {
+        .fontLogo {
+            font-size: $size3;
+        }
+    }
+
     .location__info {
         display: block;
 
@@ -388,6 +418,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    .novedades__content {
+        display: none;
+    }
+    
     .service {
         display: grid;
         grid-template-columns: auto;
@@ -447,12 +481,18 @@ body {
     }
 
     .container__medicList {
+        .medicList__text {
+            .medicList__tittle {
+                font-size: $size3;}
+        }
+
         .medicList {
             display: grid;
             gap: $size1*2;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: repeat(3, 1fr);
 
+            
             .medic {
                 width: 100%;
                 display: flex;
@@ -493,6 +533,9 @@ body {
                             width: 100%;
                             margin: auto;
                             margin-top: 30px;}
+                        a {
+                            color: $white;
+                        }
                     }
 
                     .medicList__img {
@@ -512,6 +555,11 @@ body {
                 }
             }
         }
+    }
+
+    .container__about .fontLogo,
+    .container__maternidad .fontLogo {
+        font-size: $size3;
     }
 
     .service {

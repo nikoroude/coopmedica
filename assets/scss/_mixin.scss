@@ -34,3 +34,8 @@
     word-spacing: 0.8rem;
     vertical-align: middle;
 }
+
+.medicList__tittle {
+    @include fontAtribute($fontLogo ,$size1 , 800);
+    text-align: center;
+}
