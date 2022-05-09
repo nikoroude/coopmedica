@@ -127,6 +127,8 @@ body {
 .contenido__central .content__text {
   width: 100;
   margin: 0 auto; }
+  .contenido__central .content__text .negrita {
+    font-weight: 800; }
 
 /* ======== SERVICIOS ======== */
 .service {
