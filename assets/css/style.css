@@ -274,6 +274,9 @@ body {
     list-style: none;
     text-decoration: none; }
 
+.card-text {
+  font-size: 1rem; }
+
 /* ======== CONTACTO ======== */
 .contactTittle {
   font-size: 3rem; }
@@ -357,6 +360,8 @@ body {
         width: 80%; }
   .container__mvv .fontLogo {
     font-size: 3rem; }
+  .card-text {
+    font-size: 1.5rem; }
   .location__info {
     display: block; }
     .location__info .location__infoTittle {

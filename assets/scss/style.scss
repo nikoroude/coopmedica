@@ -285,9 +285,10 @@ body {
     @extend .valores;
 }
 
-// .min-vh-75 {
-//     min-height: 75vh !important
-// }
+.card-text {
+    font-size: $size1;
+}
+
 
 /* ======== CONTACTO ======== */
 
@@ -417,6 +418,10 @@ body {
         .fontLogo {
             font-size: $size3;
         }
+    }
+
+    .card-text {
+        font-size: $size1*1.5;
     }
 
     .location__info {
