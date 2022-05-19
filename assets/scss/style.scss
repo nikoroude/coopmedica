@@ -268,10 +268,13 @@ body {
 .valores {
     text-align: justify;
 
+    b {
+        font-weight: bold;
+        text-decoration: underline;}
+
     li {
         list-style: none;
-        text-decoration: none;
-    }
+        text-decoration: none;}
 }
 
 .vision {

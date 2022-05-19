@@ -267,6 +267,9 @@ body {
 
 .valores, .vision, .mision {
   text-align: justify; }
+  .valores b, .vision b, .mision b {
+    font-weight: bold;
+    text-decoration: underline; }
   .valores li, .vision li, .mision li {
     list-style: none;
     text-decoration: none; }
