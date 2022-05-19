@@ -274,9 +274,6 @@ body {
     list-style: none;
     text-decoration: none; }
 
-.min-vh-75 {
-  min-height: 75vh !important; }
-
 /* ======== CONTACTO ======== */
 .contactTittle {
   font-size: 3rem; }
