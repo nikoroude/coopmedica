@@ -13,7 +13,7 @@
 }
 
 body {
-    overflow-x:hidden;
+    overflow-x: hidden;
     text-align: center;
     justify-content: space-between;
 }
@@ -94,13 +94,14 @@ body {
         box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     }
 
-    
+
     .content__text {
         width: 100;
         margin: 0 auto;
-        
+
         .negrita {
-            font-weight: 800;}
+            font-weight: 800;
+        }
     }
 }
 
@@ -230,7 +231,7 @@ body {
         a {
             text-decoration: none;
             color: $black;
-            
+
             &:hover {
                 color: $verde;
             }
@@ -249,6 +250,16 @@ body {
 .container__mvv {
     .fontLogo {
         font-size: $size1;
+    }
+
+    .card__mvv {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
     }
 }
 
@@ -270,11 +281,22 @@ body {
 
     b {
         font-weight: bold;
-        text-decoration: underline;}
+        text-decoration: underline;
+    }
 
     li {
         list-style: none;
-        text-decoration: none;}
+        text-decoration: none;
+    }
+}
+
+.valor__mobile {
+    list-style: none;
+    text-decoration: none;
+}
+
+.card-tittle-mvv {
+    margin: 0 auto;
 }
 
 .vision {
@@ -300,7 +322,7 @@ body {
     a {
         text-decoration: none;
         color: $black;
-        
+
         &:hover {
             color: $verde;
         }
@@ -396,10 +418,11 @@ body {
 
     .container__medicList {
         justify-content: flex-start;
-        
+
         .medicList__text {
             .medicList__tittle {
-                font-size: $size1*2;}
+                font-size: $size1*2;
+            }
         }
 
         .medicList {
@@ -412,6 +435,10 @@ body {
                 width: 80%;
             }
         }
+    }
+
+    .mvv__mobile {
+        display: none;
     }
 
     .container__mvv {
@@ -437,7 +464,11 @@ body {
     .novedades__content {
         display: none;
     }
-    
+
+    .mvv__desktop {
+        display: none;
+    }
+
     .service {
         display: grid;
         grid-template-columns: auto;
@@ -499,7 +530,8 @@ body {
     .container__medicList {
         .medicList__text {
             .medicList__tittle {
-                font-size: $size3;}
+                font-size: $size3;
+            }
         }
 
         .medicList {
@@ -508,7 +540,7 @@ body {
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: repeat(3, 1fr);
 
-            
+
             .medic {
                 width: 100%;
                 display: flex;
@@ -542,13 +574,16 @@ body {
                             color: $white;
                             transition: all 500ms ease-out;
                             margin-top: 30px;
-                            margin-bottom: 220px;}
+                            margin-bottom: 220px;
+                        }
 
                         p {
                             color: $white;
                             width: 100%;
                             margin: auto;
-                            margin-top: 30px;}
+                            margin-top: 30px;
+                        }
+
                         a {
                             color: $white;
                         }

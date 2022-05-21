@@ -236,6 +236,15 @@ body {
 .container__mvv .fontLogo {
   font-size: 1rem; }
 
+.container__mvv .card__mvv {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box; }
+
 .aboutProperties, .container__about, .container__maternidad {
   background-position: center;
   background-repeat: no-repeat;
@@ -273,6 +282,13 @@ body {
   .valores li, .vision li, .mision li {
     list-style: none;
     text-decoration: none; }
+
+.valor__mobile {
+  list-style: none;
+  text-decoration: none; }
+
+.card-tittle-mvv {
+  margin: 0 auto; }
 
 .card-text {
   font-size: 1rem; }
@@ -358,6 +374,8 @@ body {
       margin: 0 auto; }
       .container__medicList .medicList .medicList__img {
         width: 80%; }
+  .mvv__mobile {
+    display: none; }
   .container__mvv .fontLogo {
     font-size: 3rem; }
   .card-text {
@@ -369,6 +387,8 @@ body {
 
 @media screen and (max-width: 768px) {
   .novedades__content {
+    display: none; }
+  .mvv__desktop {
     display: none; }
   .service {
     display: grid;
