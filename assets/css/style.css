@@ -403,7 +403,7 @@ body {
 @media screen and (max-width: 880px) {
   .container__about .fontLogo,
   .container__maternidad .fontLogo {
-    font-size: 3rem; } }
+    font-size: 2rem; } }
 
 /* ======== 880 ======== */
 @media screen and (max-width: 800px) {
