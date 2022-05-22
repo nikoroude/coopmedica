@@ -80,7 +80,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Abel", sans-serif; }
+  font-family: "Abel", sans-serif;
+  overflow-x: hidden; }
 
 body {
   overflow-x: hidden;
