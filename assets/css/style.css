@@ -24,7 +24,7 @@
   font-family: "Abel", sans-serif;
   font-size: 1.6rem;
   font-weight: 200;
-  text-align: justify;
+  text-align: left;
   line-height: 1.6; }
 
 .font__menu {
@@ -40,6 +40,12 @@
   font-size: 1rem;
   font-weight: 800;
   text-align: center; }
+
+.service__txt {
+  font-family: "Abel", sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+  text-align: center !important; }
 
 .aboutProperties, .container__about, .container__maternidad {
   background-position: center;
@@ -63,8 +69,12 @@
 
 .service__1, .service__2, .service__3, .service__4, .service__5, .service__6 {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  text-align: center;
+  width: 260px; }
 
 * {
   margin: 0;
@@ -132,9 +142,11 @@ body {
 
 /* ======== SERVICIOS ======== */
 .service {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: repeat(3, 1fr); }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
   .service img {
     width: 80%;
     transform: scale(0.8);
@@ -390,12 +402,8 @@ body {
     display: none; }
   .mvv__desktop {
     display: none; }
-  .service {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(6, auto); }
-    .service img {
-      width: 200%; }
+  .service img {
+    width: 100%; }
   .location__map iframe {
     width: auto; } }
 

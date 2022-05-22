@@ -24,7 +24,7 @@
 
 .fontText {
     @include fontAtribute($fontText, 1.6rem, 200);
-    text-align: justify;
+    text-align: left;
     line-height: 1.6;
 }
 
@@ -38,4 +38,9 @@
 .medicList__tittle {
     @include fontAtribute($fontLogo ,$size1 , 800);
     text-align: center;
+}
+
+.service__txt {
+    @include fontAtribute($fontText, $size1, 200);
+    text-align: center !important;
 }

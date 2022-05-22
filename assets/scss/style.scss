@@ -108,9 +108,13 @@ body {
 /* ======== SERVICIOS ======== */
 
 .service {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    // grid-template-columns: 1fr 1fr;
+    // grid-template-areas: repeat(3, 1fr);
 
     img {
         width: 80%;
@@ -470,12 +474,12 @@ body {
     }
 
     .service {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: repeat(6, auto);
+        // display: grid;
+        // grid-template-columns: auto;
+        // grid-template-rows: repeat(6, auto);
 
         img {
-            width: 200%;
+            width: 100%;
         }
     }
 
