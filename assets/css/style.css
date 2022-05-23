@@ -80,8 +80,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Abel", sans-serif;
-  overflow-x: hidden; }
+  font-family: "Abel", sans-serif; }
 
 body {
   overflow-x: hidden;
@@ -92,8 +91,6 @@ body {
 :root {
   --borderWidth: 3px; }
 
-/* ======== GRID ======== */
-/* ======== BODY ======== */
 /* ======== HEADER ======== */
 .header__container .nav-link {
   color: #000;
@@ -257,6 +254,18 @@ body {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box; }
+  .container__mvv .card__mvv h4 {
+    text-decoration: underline; }
+  .container__mvv .card__mvv .valor__mobile {
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 0 !important; }
+  .container__mvv .card__mvv .card-tittle-mvv {
+    margin: 0 auto;
+    text-decoration: underline; }
+  .container__mvv .card__mvv ul {
+    padding: 0; }
 
 .aboutProperties, .container__about, .container__maternidad {
   background-position: center;
@@ -295,13 +304,6 @@ body {
   .valores li, .vision li, .mision li {
     list-style: none;
     text-decoration: none; }
-
-.valor__mobile {
-  list-style: none;
-  text-decoration: none; }
-
-.card-tittle-mvv {
-  margin: 0 auto; }
 
 .card-text {
   font-size: 1rem; }
@@ -391,6 +393,8 @@ body {
     display: none; }
   .container__mvv .fontLogo {
     font-size: 3rem; }
+  .container__about__text {
+    margin: 3rem; }
   .card-text {
     font-size: 1.5rem; }
   .location__info {
@@ -401,6 +405,10 @@ body {
 @media screen and (max-width: 768px) {
   .novedades__content {
     display: none; }
+  .contenido__central p, .contenido__central h1, .contenido__central h2, .contenido__central h3 {
+    text-align: center; }
+  .about__text {
+    font-size: 1rem; }
   .mvv__desktop {
     display: none; }
   .service img {
