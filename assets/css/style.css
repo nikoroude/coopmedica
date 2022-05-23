@@ -166,7 +166,8 @@ body {
     flex-direction: column;
     align-content: space-between;
     justify-content: space-between;
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    max-width: 100%; }
 
 /* ======== FOOTER ======== */
 .footer {
@@ -330,7 +331,7 @@ body {
 /* ======== LOGIN ======== */
 .contenedor__login {
   box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
-  width: 320px;
+  width: 290px;
   margin: 0 auto; }
 
 .login {

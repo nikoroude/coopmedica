@@ -139,6 +139,7 @@ body {
         align-content: space-between;
         justify-content: space-between;
         margin-top: $size1*2;
+        max-width: 100%;
     }
 
 }
@@ -353,7 +354,7 @@ body {
 
 .contenedor__login {
     box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
-    width: 320px;
+    width: 290px;
     margin: 0 auto;
 }
 
