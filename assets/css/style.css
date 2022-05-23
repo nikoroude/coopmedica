@@ -86,12 +86,17 @@ body {
   overflow-x: hidden;
   text-align: center;
   justify-content: space-between; }
+  body .of-hidden {
+    overflow-x: hidden; }
 
 /* FONTS */
 :root {
   --borderWidth: 3px; }
 
 /* ======== HEADER ======== */
+.header__container .of-auto {
+  overflow-x: visible; }
+
 .header__container .nav-link {
   color: #000;
   font-weight: 800; }

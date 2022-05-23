@@ -10,12 +10,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: $fontText;
+    // overflow-x: hidden;
 }
 
 body {
     overflow-x: hidden;
     text-align: center;
     justify-content: space-between;
+
+    .of-hidden{
+        overflow-x: hidden;
+    }
 }
 
 
@@ -31,6 +36,9 @@ body {
 /* ======== HEADER ======== */
 
 .header__container {
+    .of-auto{
+        overflow-x: visible;}
+
     .nav-link {
         color: $black;
         font-weight: 800;
@@ -494,9 +502,6 @@ body {
     }
 
     .service {
-        // display: grid;
-        // grid-template-columns: auto;
-        // grid-template-rows: repeat(6, auto);
 
         img {
             width: 100%;
